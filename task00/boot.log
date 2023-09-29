@@ -1,0 +1,19 @@
+Sep 29 16:37:21 +04:00 (none)  Mounting virtual file systems: /run /proc /sys /dev/shm /sys/fs/cgroup OK
+Sep 29 16:37:21 +04:00 (none)  Create symlinks in /dev targeting /proc: /dev/stdin /dev/stdout /dev/stderr /dev/fd /dev/core OK
+Sep 29 16:37:21 +04:00 (none)  Bringing up the loopback interface... OK
+Sep 29 16:37:21 +04:00 (none)  Setting hostname to vismaily... OK
+Sep 29 16:37:21 +04:00 vismaily  Populating /dev with device nodes...  OK
+Sep 29 16:37:23 +04:00 vismaily  Activating all swap files/partitions... OK
+Sep 29 16:37:23 +04:00 vismaily  Mounting root file system in read-only mode...  OK
+Sep 29 16:37:23 +04:00 vismaily  Checking file systems... OK
+Sep 29 16:37:23 +04:00 vismaily  Remounting root file system in read-write mode... OK
+Sep 29 16:37:23 +04:00 vismaily  Mounting remaining file systems... OK
+Sep 29 16:37:23 +04:00 vismaily  Cleaning file systems: /tmp OK
+Sep 29 16:37:23 +04:00 vismaily  Creating files and directories...  OK
+Sep 29 16:37:23 +04:00 vismaily  Retrying failed uevents, if any... OK
+Sep 29 16:37:24 +04:00 vismaily  Starting system log daemon... OK
+Sep 29 16:37:24 +04:00 vismaily  Starting kernel log daemon... OK
+Sep 29 16:37:24 +04:00 vismaily  Bringing up the enp0s31f6 interface... OK
+Sep 29 16:37:24 +04:00 vismaily  Starting dhcpcd on the enp0s31f6 interface... OK
+Sep 29 16:37:24 +04:00 vismaily  Bringing up the wlp45s0 interface...Sep 29 16:37:24 +04:00 vismaily  Interface wlp45s0 doesn't exist. FAIL
+--------
