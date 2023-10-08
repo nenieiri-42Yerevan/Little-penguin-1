@@ -2,8 +2,8 @@
 #### This projet, the 2nd project in the Kernel specialization of 42 school, is a series of challenges inspired by [Eudyptula](http://eudyptula-challenge.org/).
 
 ## Assignements
-1. [ex00](#ex01)
-2. [ex01](#ex02)
+  [ex00](#ex00)
+  [ex01](#ex01)
 
 ### ex00:
 **Instructions**:
