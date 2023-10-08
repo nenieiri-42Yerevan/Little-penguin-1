@@ -85,5 +85,8 @@ modinfo main.ko
 rmmod main.ko
 ```
 ```sh
-dmesg (dmesg | tail -1)
+dmesg
+dmesg -T
+dmesg --color=always
+dmesg | tail -1
 ```
