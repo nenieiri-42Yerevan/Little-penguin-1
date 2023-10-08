@@ -70,3 +70,11 @@
     [Wed May 13 12:59:18 2023] Hello world !
     ```
   - ```__init``` and ```__exit``` keywords (from the ```<linux/init.h>```) put the functions in a specific section of the module binary. This section is unloaded after module initialization, in order to not waste RAM. It is not mandatory but it is a good practice for sure.
+  - Useful commands:
+    ```sh
+    insmod main.ko
+    lsmod
+    modinfo main.ko
+    rmmod main.ko
+    dmesg (dmesg | tail -1)
+    ```
