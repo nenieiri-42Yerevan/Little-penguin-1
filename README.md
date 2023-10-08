@@ -24,7 +24,8 @@
   - It must compile on any system
 
 **Notes**:
-  - If you want to record the "Hello world!\n" message to logs with the KERN_INFO option you need to change the console log level to 6 or smaller, to reach the above result (i.e. running 'insmod main.ko' or 'rmmod main.ko' without showing log message). For that, you need to do the following.
+  - If you want to record the "Hello world!\n" message to logs with the KERN_INFO option you need to change the console log level to 6 or smaller, to reach the above result (i.e. running ```insmod main.ko``` or ```rmmod main.ko``` without showing log message). For that, you need to do the following.
+
     The default loglevel is:
     ```sh
     % cat /proc/sys/kernel/printk
