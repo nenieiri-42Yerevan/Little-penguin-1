@@ -42,4 +42,16 @@
     % cat /proc/sys/kernel/printk
     6	4	1	7
     ```
-    Alternatively for this method, you can increase the "Hello world !" message's log level from **KERN_INFO** to **KERN_DEBUG**. But I think the message is informative in nature and it is not a debugging message so this is not the preferred version. 
+    Alternatively for this method, you can increase the "Hello world !" message's log level from **KERN_INFO** to **KERN_DEBUG**. But I think the message is informative in nature and it is not a debugging message so this is not the preferred version.
+
+    In ```/usr/src/<your_kernel_version>/include/linux/kern_levels.h``` file you can see the log levels and their descriptions:
+    ```sh
+    #define KERN_EMERG      "0"    // system is unusable
+    #define KERN_ALERT      "1"    // action must be taken immediately
+    #define KERN_CRIT       "2"    // critical conditions
+    #define KERN_ERR        "3"    // error conditions
+    #define KERN_WARNING    "4"    // warning conditions
+    #define KERN_NOTICE     "5"    // normal but significant condition
+    #define KERN_INFO       "6"    // informational
+    #define KERN_DEBUG      "7"    // debug-level messages
+    ```
