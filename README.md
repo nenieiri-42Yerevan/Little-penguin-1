@@ -55,3 +55,17 @@
     #define KERN_INFO       "6"    // informational
     #define KERN_DEBUG      "7"    // debug-level messages
     ```
+  - The ```dmesg``` command prints the logs prefixed by a raw timestamp. Like this:
+    ```sh
+    % dmesg | tail -1
+    [ 2523.841538 ] Hello world !
+    ```
+    Despite the goal here is to write a basic driver that is able to write a message, we can fake dmesg by modifying the ```.bashrc``` file and adding this line to achieve the desired results:
+    ```sh
+    alias dmesg="dmesg -T --color=always"
+    ```
+    Now, the result will be (thanks to the -T option):
+    ```sh
+    % dmesg | tail -1
+    [Wed May 13 12:59:18 2023] Hello world !
+    ```
