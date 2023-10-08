@@ -4,6 +4,9 @@
 ## Assignements
   - [ex00](#ex00)
   - [ex01](#ex01)
+  - [ex02](#ex02)
+
+----------
 
 ### ex00:
 **Instructions**:
@@ -93,3 +96,8 @@ dmesg -T
 dmesg --color=always
 dmesg | tail -1
 ```
+
+----------
+
+### ex02:
+**Instructions**:
