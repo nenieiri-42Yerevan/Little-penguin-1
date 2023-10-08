@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   hello_world.c                                      :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/08 13:37:33 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/08 18:42:59 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a Hello_world module");
 MODULE_VERSION("1.0.0");
 MODULE_LICENSE("GPL");
+MODULE_INFO(intree, "Y");
 
 static int __init hello_init(void)
 {
