@@ -26,11 +26,12 @@
 **Notes**:
   - If you want to record the "Hello world!\n" message to logs with the KERN_INFO option you need to change the console log level to 6 or smaller, to reach the above result (i.e. running ```insmod main.ko``` or ```rmmod main.ko``` without showing log message). For that, you need to do the following.
 
-    The default loglevel is:
+    The default console log level when the computer is rebooted or is turning on is always reset to this:
     ```sh
     % cat /proc/sys/kernel/printk
     7	4	1	7
     ```
+    Where the first number is **Console log level**, 2 - **Default log level**, 3 - **Minimum log level**, 4 - **Boot-time default log level**.
     To change this behavior we need to run:
     ```sh
     sudo echo 'LOGLEVEL="6"' >> /etc/sysconfig/console
