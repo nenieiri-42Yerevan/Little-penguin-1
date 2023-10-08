@@ -5,6 +5,15 @@
 ### ex00:
 **Instructions**:
   - Download Linus' latest git tree from git.kernel.org, build, compile and boot it.
+    ```sh
+    % sudo insmod main.ko
+    % dmesg | tail -1
+    [Wed May 13 12:59:18 2015] Hello world !
+    % sudo rmmod main.ko
+    % dmesg | tail -1
+    [Wed May 13 12:59:24 2015] Cleaning up module.
+    %
+    ```
   - Enable CONFIG_LOCALVERSION_AUTO=y
 
 ----------
