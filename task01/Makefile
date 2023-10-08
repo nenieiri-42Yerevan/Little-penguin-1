@@ -6,11 +6,11 @@
 #    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 12:52:01 by vismaily          #+#    #+#              #
-#    Updated: 2023/10/06 13:10:17 by vismaily         ###   ########.fr        #
+#    Updated: 2023/10/06 14:52:31 by vismaily         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-OBJ-M		= hello_wolrd.c
+obj-m		= hello_world.o
 
 K-VERSION	= $(shell uname -r)
 
