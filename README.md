@@ -5,6 +5,13 @@
 ### ex00:
 **Instructions**:
   - Download Linus' latest git tree from git.kernel.org, build, compile and boot it.
+  - Enable CONFIG_LOCALVERSION_AUTO=y
+
+----------
+
+### ex01:
+**Instructions**:
+  - Build a "Hello World module" that outputs specific messages on load and unload.
     ```sh
     % sudo insmod main.ko
     % dmesg | tail -1
@@ -14,13 +21,6 @@
     [Wed May 13 12:59:24 2015] Cleaning up module.
     %
     ```
-  - Enable CONFIG_LOCALVERSION_AUTO=y
-
-----------
-
-### ex01:
-**Instructions**:
-  - Build a "Hello World module" that outputs specific messages on load and unload.
   - It must compile on any system
 
 **Notes**:
