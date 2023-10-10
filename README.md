@@ -16,12 +16,12 @@
 ----------
 
 ### ex00:
-**Instructions**:
-  - Download Linus' latest git tree from git.kernel.org, build, compile and boot it.
-  - Enable CONFIG_LOCALVERSION_AUTO=y
-  
-**Notes**:
-  - In the Linux kernel, ```CONFIG_LOCALVERSION``` and ```CONFIG_LOCALVERSION_AUTO``` in the ```.config``` file and ```EXTRAVERSION``` in the ```Makefile``` are used to specify version information for the kernel.
+  **Instructions**:
+    - Download Linus' latest git tree from git.kernel.org, build, compile and boot it.
+    - Enable CONFIG_LOCALVERSION_AUTO=y
+    
+  **Notes**:
+    - In the Linux kernel, ```CONFIG_LOCALVERSION``` and ```CONFIG_LOCALVERSION_AUTO``` in the ```.config``` file and ```EXTRAVERSION``` in the ```Makefile``` are used to specify version information for the kernel.
 
 ----------
 
