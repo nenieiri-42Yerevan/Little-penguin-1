@@ -1,5 +1,5 @@
 # Little penguin 1
-#### This projet, the 2nd project in the Kernel specialization of 42 school, is a series of challenges inspired by [Eudyptula](http://eudyptula-challenge.org/).
+#### This project is the 2nd project in the Kernel specialization of 42 School. It is a series of challenges inspired by [Eudyptula](http://eudyptula-challenge.org/).
 
 ## Assignements
   - [ex00](#ex00)
