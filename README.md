@@ -5,6 +5,13 @@
   - [ex00](#ex00)
   - [ex01](#ex01)
   - [ex02](#ex02)
+  - [ex03](#ex03)
+  - [ex04](#ex04)
+  - [ex05](#ex05)
+  - [ex06](#ex06)
+  - [ex07](#ex07)
+  - [ex08](#ex08)
+  - [ex09](#ex09)
 
 ----------
 
@@ -12,6 +19,9 @@
 **Instructions**:
   - Download Linus' latest git tree from git.kernel.org, build, compile and boot it.
   - Enable CONFIG_LOCALVERSION_AUTO=y
+  
+**Notes**:
+  - In the Linux kernel, ```CONFIG_LOCALVERSION``` and ```CONFIG_LOCALVERSION_AUTO``` in the ```.config``` file and ```EXTRAVERSION``` in the ```Makefile``` are used to specify version information for the kernel.
 
 ----------
 
@@ -100,4 +110,39 @@ dmesg | tail -1
 ----------
 
 ### ex02:
+**Instructions**:
+
+----------
+
+### ex03:
+**Instructions**:
+
+----------
+
+### ex04:
+**Instructions**:
+
+----------
+
+### ex05:
+**Instructions**:
+
+----------
+
+### ex06:
+**Instructions**:
+
+----------
+
+### ex07:
+**Instructions**:
+
+----------
+
+### ex08:
+**Instructions**:
+
+----------
+
+### ex09:
 **Instructions**:
