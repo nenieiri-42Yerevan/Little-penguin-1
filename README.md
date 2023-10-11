@@ -123,6 +123,9 @@ dmesg | tail -1
 
 ### ex03:
 **Instructions**:
+  -  Take a given file and modify it to match the Linux coding style.
+**Notes**
+  - [Linux coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
 
 ----------
 
