@@ -112,6 +112,10 @@ dmesg | tail -1
 
 ### ex02:
 **Instructions**:
+  - Take the same kernel git tree as in ex00 and modify it to have -thor_kernel in the version string
+  - Make a patch for the change, it has to be compliant with Linux standards
+
+**Notes**:
 
 ----------
 
