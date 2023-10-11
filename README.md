@@ -116,6 +116,7 @@ dmesg | tail -1
   - Make a patch for the change, it has to be compliant with Linux standards
 
 **Notes**:
+  - [Documentation](https://www.kernel.org/doc/html/v4.17/process/submitting-patches.html)
 
 ----------
 
