@@ -1,4 +1,4 @@
-Subject: [PATCH 1/1] Add -thor_kernel in version string
+Subject: [PATCH] Add -thor_kernel in version string
 From: Volodya Ismailyan <nenie_iri@mail.ru>
 
 Added -thor_kernel in the EXTRAVERSION string as the subject mandates it.
