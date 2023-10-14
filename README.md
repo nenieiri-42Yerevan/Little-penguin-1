@@ -12,7 +12,7 @@
   - [ex07](#ex07)
   - [ex08](#ex08)
   - [ex09](#ex09)
-  - [Useful links](#Usefull)
+  - [Useful links](#Useful)
 
 ----------
 
