@@ -12,6 +12,7 @@
   - [ex07](#ex07)
   - [ex08](#ex08)
   - [ex09](#ex09)
+  - [Useful links](#Useful links)
 
 ----------
 
@@ -157,3 +158,8 @@ dmesg | tail -1
 
 ### ex09:
 **Instructions**:
+
+----------
+
+## Useful links
+[__1) printk__](https://www.kernel.org/doc/html/next/core-api/printk-basics.html) <br>
