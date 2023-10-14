@@ -133,6 +133,11 @@ dmesg | tail -1
 
 ### ex04:
 **Instructions**:
+  - Take the kernel module written for [ex01](ex01/) and modify it so that when any USB keyboard is plugged in, the module will be automatically loaded
+  - Write a rules file for hotplug userspace tools, if needed.
+
+**Notes**
+  - [__Read - Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
 
 ----------
 
