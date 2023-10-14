@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/14 19:32:44 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/14 22:42:33 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ MODULE_LICENSE("GPL");
 
 static int __init init_driver(void)
 {
-	pr_info("keyboard plugged in!\n");
+	pr_info("Keyboard plugged in!\n");
 	return (0);
 }
 

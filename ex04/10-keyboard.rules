@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTR{bInterfaceProtocol}=="01", RUN="/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko"
