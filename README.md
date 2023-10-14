@@ -138,6 +138,13 @@ dmesg | tail -1
 
 **Notes**
   - __Read -__ [__Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
+  -  Udev is a device manager that dynamically manages device nodes in the /dev/ directory. The ```/etc/udev/rules.d/``` directory is where you can define custom rules for udev to follow.
+
+     A brief explanation of what you can do with this directory:
+     - Device Naming: You can create rules that specify the names of device nodes. For example, you can set a specific name for a particular USB device or network interface.
+     - Permissions: You can use udev rules to set the permissions on device nodes. This allows you to control which users or groups have access to a device.
+     - Triggering Actions: Udev rules can be used to trigger certain actions when a specific device is connected or disconnected. For instance, you can run a script or a program when a particular USB device is plugged in.
+     - Attributes and Labels: You can use rules to set or modify device attributes and labels. This is useful for making devices easily identifiable.
 
 ----------
 
