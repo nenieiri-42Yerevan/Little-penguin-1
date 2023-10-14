@@ -137,7 +137,7 @@ dmesg | tail -1
   - Write a rules file for hotplug userspace tools, if needed.
 
 **Notes**
-  - [__Read - Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
+  - __Read -__ [__Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
 
 ----------
 
