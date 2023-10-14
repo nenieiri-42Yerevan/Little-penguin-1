@@ -162,5 +162,5 @@ dmesg | tail -1
 ----------
 
 ## Useful links
-[__2) Coding style__](https://www.kernel.org/doc/html/v4.10/process/coding-style.html) <br>
-[__1) printk__](https://www.kernel.org/doc/html/next/core-api/printk-basics.html) <br>
+[__1) Coding style__](https://www.kernel.org/doc/html/v4.10/process/coding-style.html) <br>
+[__2) printk__](https://www.kernel.org/doc/html/next/core-api/printk-basics.html) <br>
