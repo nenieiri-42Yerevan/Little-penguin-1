@@ -150,6 +150,12 @@ dmesg | tail -1
 
 ### ex05:
 **Instructions**:
+  - Take the kernel module written for [ex01](ex01/) and modify it to be a misc char device driver.
+  - Make it behave specifically on reads and writes.
+  - The misc device node should show up in /dev/fortytwo.
+  - The misc device should be registered when the module is loaded, and unregistered when it is unloaded.
+
+**Notes**
 
 ----------
 
