@@ -182,5 +182,5 @@ dmesg | tail -1
 ## Useful links
 [__1) Coding style__](https://www.kernel.org/doc/html/v4.10/process/coding-style.html) <br>
 [__2) printk__](https://www.kernel.org/doc/html/next/core-api/printk-basics.html) <br>
-[__3) Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf) <be>
+[__3) Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf) <br>
 [__4) Linux Device Driver Tutorials__](https://embetronicx.com/linux-device-driver-tutorials/) <br>
