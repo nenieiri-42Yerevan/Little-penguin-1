@@ -158,6 +158,7 @@ dmesg | tail -1
 
 **Notes**
   - [Major and Minor numbers](https://embetronicx.com/tutorials/linux/device-drivers/character-device-driver-major-number-and-minor-number/)
+  - [Creating Device File](https://embetronicx.com/tutorials/linux/device-drivers/device-file-creation-for-character-drivers/)
 
 ----------
 
