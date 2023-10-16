@@ -137,8 +137,8 @@ dmesg | tail -1
   - Write a rules file for hotplug userspace tools, if needed.
 
 **Notes**
-  - Read - [Linux Device Drivers, 3rd edition (chapter 14)](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
-  -  Udev is a device manager that dynamically manages device nodes in the /dev/ directory. The ```/etc/udev/rules.d/``` directory is where you can define custom rules for udev to follow.
+  - [Linux Device Drivers, 3rd edition (chapter 14)](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
+  - Udev is a device manager that dynamically manages device nodes in the /dev/ directory. The ```/etc/udev/rules.d/``` directory is where you can define custom rules for udev to follow.
 
      A brief explanation of what you can do with this directory:
      - Device Naming: You can create rules that specify the names of device nodes. For example, you can set a specific name for a particular USB device or network interface.
