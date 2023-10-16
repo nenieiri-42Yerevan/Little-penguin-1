@@ -156,6 +156,7 @@ dmesg | tail -1
   - The misc device should be registered when the module is loaded, and unregistered when it is unloaded.
 
 **Notes**
+  - [Major and Minor numbers](https://embetronicx.com/tutorials/linux/device-drivers/character-device-driver-major-number-and-minor-number/)
 
 ----------
 
