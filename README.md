@@ -137,8 +137,8 @@ dmesg | tail -1
   - Write a rules file for hotplug userspace tools, if needed.
 
 **Notes**
-  - __Read -__ [__Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
-  -  Udev is a device manager that dynamically manages device nodes in the /dev/ directory. The ```/etc/udev/rules.d/``` directory is where you can define custom rules for udev to follow.
+  - [Linux Device Drivers, 3rd edition (chapter 14)](https://static.lwn.net/images/pdf/LDD3/ch14.pdf)
+  - Udev is a device manager that dynamically manages device nodes in the /dev/ directory. The ```/etc/udev/rules.d/``` directory is where you can define custom rules for udev to follow.
 
      A brief explanation of what you can do with this directory:
      - Device Naming: You can create rules that specify the names of device nodes. For example, you can set a specific name for a particular USB device or network interface.
@@ -151,11 +151,14 @@ dmesg | tail -1
 ### ex05:
 **Instructions**:
   - Take the kernel module written for [ex01](ex01/) and modify it to be a misc char device driver.
-  - Make it behave specifically on reads and writes.
+  - The misc device should be created with a dynamic minor number.
   - The misc device node should show up in /dev/fortytwo.
   - The misc device should be registered when the module is loaded, and unregistered when it is unloaded.
+  - Make it behave specifically on reads and writes.
 
 **Notes**
+  - [Major and Minor numbers](https://embetronicx.com/tutorials/linux/device-drivers/character-device-driver-major-number-and-minor-number/)
+  - [Creating Device File](https://embetronicx.com/tutorials/linux/device-drivers/device-file-creation-for-character-drivers/)
 
 ----------
 
