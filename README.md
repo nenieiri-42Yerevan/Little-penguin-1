@@ -187,3 +187,4 @@ dmesg | tail -1
 [__2) printk__](https://www.kernel.org/doc/html/next/core-api/printk-basics.html) <br>
 [__3) Linux Device Drivers, 3rd edition (chapter 14)__](https://static.lwn.net/images/pdf/LDD3/ch14.pdf) <br>
 [__4) Linux Device Driver Tutorials__](https://embetronicx.com/linux-device-driver-tutorials/) <br>
+[__5) The Linux Kernel documentation__](https://docs.kernel.org/index.html) <br>
