@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/17 12:15:50 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/17 13:02:32 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/fs.h>
+#include <linux/device.h>
 
 MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a misc char device driver");
@@ -35,7 +36,7 @@ static int __init hello_init(void)
 		MAJOR(dev), MINOR(dev));
 
 	/* Creating struct class */
-	dev_class = class_create(THIS_MODULE, "fortytwo_class");
+	dev_class = class_create("fortytwo_class");
 	if (IS_ERR(dev_class)) {
 		pr_err("Cannot create the struct class for device\n");
 		goto r_class;
@@ -52,7 +53,7 @@ static int __init hello_init(void)
 r_device:
 	class_destroy(dev_class);
 r_class:
-	unregister_chrdev_cleanup(dev, 1);
+	unregister_chrdev_region(dev, 1);
 	return (-1);
 }
 
