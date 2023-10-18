@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/18 15:34:31 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:51:51 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <linux/init.h>
 #include <linux/fs.h>
 #include <linux/device.h>
+#include <linux/cdev.h>
 
 MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a misc char device driver");
@@ -58,7 +59,7 @@ fortytwo_read(struct file *flip, char __user *buf, size_t len, loff_t *off)
  * This function will be called when we write the Device file
  */
 static ssize_t
-fortytwo_write(struct file *flip, const char __user *buf,
+fortytwo_release(struct file *flip, const char __user *buf,
 		size_t len, loff_t *off)
 {
 	pr_info("4\n");
