@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/17 13:02:32 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:34:31 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,60 @@ MODULE_DESCRIPTION("This is a misc char device driver");
 MODULE_VERSION("1.0.0");
 MODULE_LICENSE("GPL");
 
-dev_t	dev = 0;
+static dev_t			dev = 0;
+static struct class		*dev_class;
+static struct cdev		fortytwo_cdev;
+static struct file_operations	fops;
 
-static struct class	*dev_class;
+/*
+ * This function will be called when we open the Device file
+ */
+static int fortytwo_open(struct inode *_inode, struct file *_file)
+{
+	pr_info("1\n");
+	return (0);
+}
+
+/*
+ * This function will be called when we close the Device file
+ */
+static int fortytwo_release(struct inode *_inode, struct file *_file)
+{
+	pr_info("2\n");
+	return (0);
+}
+
+/*
+ * This function will be called when we read the Device file
+ */
+static ssize_t
+fortytwo_read(struct file *flip, char __user *buf, size_t len, loff_t *off)
+{
+	pr_info("3\n");
+	return (0);
+}
+
+/*
+ * This function will be called when we write the Device file
+ */
+static ssize_t
+fortytwo_write(struct file *flip, const char __user *buf,
+		size_t len, loff_t *off)
+{
+	pr_info("4\n");
+	return (0);
+}
 
 static int __init hello_init(void)
 {
+	fops.owner = THIS_MODULE;
+	fops.open = fortytwo_open;
+	fops.read = fortytwo_read;
+	fops.write = fortytwo_write;
+	fops.release = fortytwo_release;
+
+	cdev_init(&fortytwo_cdev, &fops);
+
 	/* Allocating Major number dynamically */
 	if (alloc_chrdev_region(&dev, 0, 1, "fortytwo") < 0) {
 		pr_err("Cannot allocate major number :(\n");
@@ -34,6 +82,13 @@ static int __init hello_init(void)
 	}
 	pr_info("Major number is %d and Minor number is %d\n",
 		MAJOR(dev), MINOR(dev));
+
+	/* Adding character device to the system */
+	if (cdev_add(&fortytwo_cdev, dev, 1) < 0)
+	{
+		pr_err("Cannot add the character device to the system\n");
+		goto r_class;
+	}
 
 	/* Creating struct class */
 	dev_class = class_create("fortytwo_class");
@@ -61,6 +116,7 @@ static void __exit hello_cleanup(void)
 {
 	device_destroy(dev_class, dev);
 	class_destroy(dev_class);
+	cdev_del(&fortytwo_cdev);
 	unregister_chrdev_region(dev, 1);
 	pr_info("Fortytwo device driver removed successfully :)\n");
 }
