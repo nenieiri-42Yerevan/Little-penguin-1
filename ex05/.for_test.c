@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 17:57:36 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/20 17:59:59 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:07:34 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,27 @@ int	main(void)
 	int	fd;
 	int	res;
 
-	memset(aa, 0, 8);
+	memset(name, 0, 8);
 
 	fd = open("/dev/fortytwo", O_RDWR);
+
+	res = write(fd, "vism", 4);
+	printf("res - %d\n", res);
 
 	res = write(fd, "vismaily", 8);
 	printf("res - %d\n", res);
 
-	read(fd, name, 2);
-	printf("res - %s\n", name);
+	res = read(fd, name, 2);
+	printf("res - %s | %d\n", name, res);
 
-	read(fd, name, 2);
-	printf("res %s\n", name);
+	res = read(fd, name, 2);
+	printf("res - %s | %d\n", name, res);
 
-	read(fd, name, 8);
-	printf("res %s\n", name);
+	res = read(fd, name, 8);
+	printf("res - %s | %d\n", name, res);
+
+	res = read(fd, name, 8);
+	printf("res - %s | %d\n", name, res);
+
 	return (0);
 }
