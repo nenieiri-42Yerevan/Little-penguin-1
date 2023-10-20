@@ -161,7 +161,9 @@ dmesg | tail -1
   - [Creating Device File](https://embetronicx.com/tutorials/linux/device-drivers/device-file-creation-for-character-drivers/)
   - [File Operations](https://embetronicx.com/tutorials/linux/device-drivers/cdev-structure-and-file-operations-of-character-drivers/)
   - [Real Device Driver](https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-tutorial-programming/)
-  - For testing you can use ```.for_test.c``` file and also this commands ```cat < /dev/fortytwo``` ```echo -n vismaily > /dev/fortytwo```
+  - For testing you can use ```.for_test.c``` file or this commands:
+    - ```cat < /dev/fortytwo```
+    - ```echo -n vismaily > /dev/fortytwo```
 
 ----------
 
