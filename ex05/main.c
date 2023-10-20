@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/20 18:09:52 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:12:04 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ ft_write(struct file *f, const char __user *buf,
 	return (len);
 }
 
-static int __init driver_init(void)
+static int __init ft_driver_init(void)
 {
 	fops.owner = THIS_MODULE;
 	fops.read = ft_read;
@@ -119,7 +119,7 @@ r_class:
 	return (-1);
 }
 
-static void __exit driver_exit(void)
+static void __exit ft_driver_exit(void)
 {
 	device_destroy(dev_class, dev);
 	class_destroy(dev_class);
@@ -128,5 +128,5 @@ static void __exit driver_exit(void)
 	pr_info("Fortytwo device driver removed successfully :)\n");
 }
 
-module_init(driver_init);
-module_exit(driver_exit);
+module_init(ft_driver_init);
+module_exit(ft_driver_exit);
