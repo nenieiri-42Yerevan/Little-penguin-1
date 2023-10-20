@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/20 16:28:34 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:55:25 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,21 @@ static struct file_operations	fops;
 static ssize_t
 ft_read(struct file *f, char __user *buf, size_t len, loff_t *offset)
 {
-	pr_info("3\n");
-	return (0);
+	int	readlen;
+	size_t	copied;
+
+	if (!buf)
+		return (-EINVAL);
+	if (*offset >= USERNAME_LEN)
+		return (0);
+	if (*offset + len > USERNAME_LEN)
+		readlen = USERNAME_LEN - *offset;
+	else
+		readlen = len;
+	copied = readlen - copy_to_user(buf, USERNAME + *offset, readlen);
+	*offset += copied;
+	pr_info("Username %s (or it's part) was sent successfully", USERNAME);
+	return (copied);
 }
 
 /*
@@ -47,18 +60,15 @@ static ssize_t
 ft_write(struct file *f, const char __user *buf,
 		size_t len, loff_t *offset)
 {
-	char	user_data[USERNAME_LEN + 1];
+	char	user_data[USERNAME_LEN];
 
-	memset(user_data, 0, USERNAME_LEN + 1);
-	if (len != USERNAME_LEN && len != USERNAME_LEN + 1)
+	if (!buf || len != USERNAME_LEN)
 		return (-EINVAL);
 	if (copy_from_user(user_data, buf, len))
 		return (-EIO);
-	if (len == (USERNAME_LEN + 1) && user_data[USERNAME_LEN] != '\0')
-		return (-EINVAL);
 	if (memcmp(user_data, USERNAME, USERNAME_LEN))
 		return (-EINVAL);
-	pr_info("line %d", __LINE__);
+	pr_info("Username %s was received successfully", USERNAME);
 	return (len);
 }
 
