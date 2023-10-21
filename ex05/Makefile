@@ -6,11 +6,11 @@
 #    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 12:52:01 by vismaily          #+#    #+#              #
-#    Updated: 2023/10/06 14:52:31 by vismaily         ###   ########.fr        #
+#    Updated: 2023/10/21 15:39:12 by vismaily         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-obj-m		= main.o
+obj-m		= misc_device_driver.o
 
 K-VERSION	= $(shell uname -r)
 
