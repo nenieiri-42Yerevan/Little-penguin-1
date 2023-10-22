@@ -170,6 +170,10 @@ dmesg | tail -1
 
 ### ex06:
 **Instructions**:
+  - Download the linux-next kernel, build it, compile it, and boot it.
+
+**Notes**
+  - [linux-next](https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/)
 
 ----------
 
