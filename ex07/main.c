@@ -6,30 +6,40 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/08 18:42:59 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/22 19:28:16 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
+#include <linux/debugfs.h>
 
 MODULE_AUTHOR("Volodya Ismailyan");
-MODULE_DESCRIPTION("This is a Hello_world module");
+MODULE_DESCRIPTION("This is a debugfs module");
 MODULE_VERSION("1.0.0");
 MODULE_LICENSE("GPL");
 MODULE_INFO(intree, "Y");
 
-static int __init hello_init(void)
+static struct dentry	*ft_dentry;
+
+static int __init debugfs_init(void)
 {
-	printk(KERN_INFO "Hello world !\n");
+	ft_dentry = debugfs_create_dir("fortytwo", NULL);
+	if (!ft_dentry)
+	{
+		pr_err("Failed to create 'fortytwo' directory in debugfs");
+		return (-1)
+	}
+	printk(KERN_INFO "Inserting debugfs module !\n");
 	return (0);
 }
 
-static void __exit hello_cleanup(void)
+static void __exit debugfs_cleanup(void)
 {
-	printk(KERN_INFO "Cleaning up module.\n");
+	debugfs_remove_recursive(ft_dentry);
+	printk(KERN_INFO "Cleaning up debugfs module.\n");
 }
 
-module_init(hello_init);
-module_exit(hello_cleanup);
+module_init(debugfs_init);
+module_exit(debugfs_cleanup);
