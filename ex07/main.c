@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/22 19:28:16 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/22 22:46:58 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ static int __init debugfs_init(void)
 	if (!ft_dentry)
 	{
 		pr_err("Failed to create 'fortytwo' directory in debugfs");
-		return (-1)
+		return (-1);
 	}
-	printk(KERN_INFO "Inserting debugfs module !\n");
+	printk(KERN_INFO "Inserting debugfs module!\n");
 	return (0);
 }
 
