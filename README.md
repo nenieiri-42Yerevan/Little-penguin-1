@@ -180,6 +180,12 @@ dmesg | tail -1
 ### ex07:
 **Instructions**:
 
+**Notes**
+  - To create a directory in /sys/kernel/debug we first need to mount debugfs using this command:
+    ```sh
+    mount -t debugfs none /sys/kernel/debug/
+    ```
+
 ----------
 
 ### ex08:
