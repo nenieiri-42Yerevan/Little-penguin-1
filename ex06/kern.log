@@ -1,0 +1,822 @@
+Oct 22 12:22:49 vismaily kernel: klogd 1.5.1, log source = /proc/kmsg started.
+Oct 22 12:22:49 vismaily kernel: Cannot find map file.
+Oct 22 12:22:49 vismaily kernel: Loaded 172404 symbols from 9 modules.
+Oct 22 12:22:49 vismaily kernel: [    0.000000] Linux version 6.6.0-rc6-next-20231020 (root@nenieiri) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT_DYNAMIC Sun Oct 22 16:09:33 +04 2023
+Oct 22 12:22:49 vismaily kernel: [    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.6.0-vismaily root=/dev/nvme0n1p8 ro
+Oct 22 12:22:49 vismaily kernel: [    0.000000] x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-provided physical RAM map:
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000008cbf3fff] usable
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x000000008cbf4000-0x000000009232efff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x000000009232f000-0x0000000092f2efff] ACPI NVS
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000092f2f000-0x0000000092ffefff] ACPI data
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000092fff000-0x0000000092ffffff] usable
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000093000000-0x0000000096ffffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000097a00000-0x0000000097bfffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000098400000-0x00000000a07fffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x0000000a5f7fffff] usable
+Oct 22 12:22:49 vismaily kernel: [    0.000000] NX (Execute Disable) protection: active
+Oct 22 12:22:49 vismaily kernel: [    0.000000] APIC: Static calls initialized
+Oct 22 12:22:49 vismaily kernel: [    0.000000] efi: EFI v2.7 by Lenovo
+Oct 22 12:22:49 vismaily kernel: [    0.000000] efi: ACPI=0x92ffe000 ACPI 2.0=0x92ffe014 TPMFinalLog=0x92eae000 SMBIOS=0x8f0af000 SMBIOS 3.0=0x8f0a2000 MEMATTR=0x88cea018 ESRT=0x885ea618 RNG=0x92ffd018 TPMEventLog=0x6b7e6018 
+Oct 22 12:22:49 vismaily kernel: [    0.000000] random: crng init done
+Oct 22 12:22:49 vismaily kernel: [    0.000000] efi: Remove mem75: MMIO range=[0xc0000000-0xcfffffff] (256MB) from e820 map
+Oct 22 12:22:49 vismaily kernel: [    0.000000] e820: remove [mem 0xc0000000-0xcfffffff] reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000000] SMBIOS 3.4.0 present.
+Oct 22 12:22:49 vismaily kernel: [    0.000000] DMI: LENOVO 21E6005VRT/21E6005VRT, BIOS R1SET49W(1.20) 04/13/2023
+Oct 22 12:22:49 vismaily kernel: [    0.000000] tsc: Detected 2600.000 MHz processor
+Oct 22 12:22:49 vismaily kernel: [    0.000000] tsc: Detected 2611.200 MHz TSC
+Oct 22 12:22:49 vismaily kernel: [    0.000004] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 22 12:22:49 vismaily kernel: [    0.000007] e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 22 12:22:49 vismaily kernel: [    0.000017] last_pfn = 0xa5f800 max_arch_pfn = 0x400000000
+Oct 22 12:22:49 vismaily kernel: [    0.000023] MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs
+Oct 22 12:22:49 vismaily kernel: [    0.000027] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 22 12:22:49 vismaily kernel: [    0.000703] last_pfn = 0x93000 max_arch_pfn = 0x400000000
+Oct 22 12:22:49 vismaily kernel: [    0.009981] esrt: Reserving ESRT space from 0x00000000885ea618 to 0x00000000885ea718.
+Oct 22 12:22:49 vismaily kernel: [    0.009988] e820: update [mem 0x885ea000-0x885eafff] usable ==> reserved
+Oct 22 12:22:49 vismaily kernel: [    0.010007] Using GB pages for direct mapping
+Oct 22 12:22:49 vismaily kernel: [    0.010008] Incomplete global flushes, disabling PCID
+Oct 22 12:22:49 vismaily kernel: [    0.010366] Secure boot disabled
+Oct 22 12:22:49 vismaily kernel: [    0.010369] ACPI: Early table checksum verification disabled
+Oct 22 12:22:49 vismaily kernel: [    0.010372] ACPI: RSDP 0x0000000092FFE014 000024 (v02 LENOVO)
+Oct 22 12:22:49 vismaily kernel: [    0.010378] ACPI: XSDT 0x0000000092FFC188 000134 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010385] ACPI: FACP 0x000000008F091000 000114 (v06 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010391] ACPI: DSDT 0x000000008F049000 043B23 (v02 LENOVO ICL      00000002      01000013)
+Oct 22 12:22:49 vismaily kernel: [    0.010396] ACPI: FACS 0x0000000092E93000 000040
+Oct 22 12:22:49 vismaily kernel: [    0.010399] ACPI: SSDT 0x000000008F14A000 00038C (v02 LENOVO Pmax_Dev 00000001 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010402] ACPI: SSDT 0x000000008F132000 005C4B (v02 LENOVO CpuSsdt  00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010406] ACPI: SSDT 0x000000008F131000 00059B (v02 LENOVO CtdpB    00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010410] ACPI: SSDT 0x000000008F0C2000 003E6C (v02 LENOVO DptfTabl 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010413] ACPI: SSDT 0x000000008F094000 000918 (v01 LENOVO WmiTable 00000001 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010416] ACPI: SSDT 0x000000008F093000 00060E (v02 LENOVO Tpm2Tabl 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010420] ACPI: TPM2 0x000000008F092000 00004C (v04 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010423] ACPI: HPET 0x000000008F090000 000038 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010427] ACPI: APIC 0x000000008F08F000 0001DC (v05 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010430] ACPI: MCFG 0x000000008F08E000 00003C (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010433] ACPI: ECDT 0x000000008F08D000 000053 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010437] ACPI: SSDT 0x000000008F045000 0033AD (v02 LENOVO AdlP_Rvp 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010440] ACPI: SSDT 0x000000008F044000 00011A (v02 LENOVO PID0Ssdt 00000010 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010443] ACPI: SSDT 0x000000008F043000 000B5E (v02 LENOVO ProjSsdt 00000010 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010447] ACPI: SSDT 0x000000008F03F000 002F4C (v02 LENOVO SaSsdt   00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010450] ACPI: SSDT 0x000000008F03B000 0035CE (v02 LENOVO IgfxSsdt 00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010454] ACPI: SSDT 0x000000008F032000 008974 (v02 LENOVO TcssSsdt 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010457] ACPI: LPIT 0x000000008F031000 0000CC (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010460] ACPI: WSMT 0x000000008F030000 000028 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010464] ACPI: SSDT 0x000000008F02D000 002357 (v02 LENOVO TbtTypeC 00000000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010467] ACPI: DBGP 0x000000008F02C000 000034 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010470] ACPI: DBG2 0x000000008F02B000 000054 (v00 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010474] ACPI: NHLT 0x000000008F029000 00189E (v00 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010477] ACPI: POAT 0x000000008F028000 000055 (v03 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010480] ACPI: SSDT 0x000000008F012000 000FDB (v02 LENOVO UsbCTabl 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010484] ACPI: BATB 0x000000008F011000 00004A (v02 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010487] ACPI: SSDT 0x000000008D209000 00129A (v02 LENOVO SocGpe   00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010490] ACPI: SSDT 0x000000008D205000 0039DA (v02 LENOVO SocCmn   00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010493] ACPI: SSDT 0x000000008D204000 000144 (v02 LENOVO ADebTabl 00001000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.010497] ACPI: BGRT 0x000000008F013000 000038 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010500] ACPI: PHAT 0x000000008D1DD000 000498 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010504] ACPI: UEFI 0x0000000092E8A000 000076 (v01 LENOVO TP-R1S   00001200 PTEC 00000002)
+Oct 22 12:22:49 vismaily kernel: [    0.010507] ACPI: FPDT 0x000000008D1DC000 000034 (v01 LENOVO TP-R1S   00001200 PTEC 00001200)
+Oct 22 12:22:49 vismaily kernel: [    0.010510] ACPI: Reserving FACP table memory at [mem 0x8f091000-0x8f091113]
+Oct 22 12:22:49 vismaily kernel: [    0.010512] ACPI: Reserving DSDT table memory at [mem 0x8f049000-0x8f08cb22]
+Oct 22 12:22:49 vismaily kernel: [    0.010513] ACPI: Reserving FACS table memory at [mem 0x92e93000-0x92e9303f]
+Oct 22 12:22:49 vismaily kernel: [    0.010514] ACPI: Reserving SSDT table memory at [mem 0x8f14a000-0x8f14a38b]
+Oct 22 12:22:49 vismaily kernel: [    0.010515] ACPI: Reserving SSDT table memory at [mem 0x8f132000-0x8f137c4a]
+Oct 22 12:22:49 vismaily kernel: [    0.010516] ACPI: Reserving SSDT table memory at [mem 0x8f131000-0x8f13159a]
+Oct 22 12:22:49 vismaily kernel: [    0.010517] ACPI: Reserving SSDT table memory at [mem 0x8f0c2000-0x8f0c5e6b]
+Oct 22 12:22:49 vismaily kernel: [    0.010518] ACPI: Reserving SSDT table memory at [mem 0x8f094000-0x8f094917]
+Oct 22 12:22:49 vismaily kernel: [    0.010519] ACPI: Reserving SSDT table memory at [mem 0x8f093000-0x8f09360d]
+Oct 22 12:22:49 vismaily kernel: [    0.010521] ACPI: Reserving TPM2 table memory at [mem 0x8f092000-0x8f09204b]
+Oct 22 12:22:49 vismaily kernel: [    0.010522] ACPI: Reserving HPET table memory at [mem 0x8f090000-0x8f090037]
+Oct 22 12:22:49 vismaily kernel: [    0.010523] ACPI: Reserving APIC table memory at [mem 0x8f08f000-0x8f08f1db]
+Oct 22 12:22:49 vismaily kernel: [    0.010524] ACPI: Reserving MCFG table memory at [mem 0x8f08e000-0x8f08e03b]
+Oct 22 12:22:49 vismaily kernel: [    0.010525] ACPI: Reserving ECDT table memory at [mem 0x8f08d000-0x8f08d052]
+Oct 22 12:22:49 vismaily kernel: [    0.010526] ACPI: Reserving SSDT table memory at [mem 0x8f045000-0x8f0483ac]
+Oct 22 12:22:49 vismaily kernel: [    0.010527] ACPI: Reserving SSDT table memory at [mem 0x8f044000-0x8f044119]
+Oct 22 12:22:49 vismaily kernel: [    0.010528] ACPI: Reserving SSDT table memory at [mem 0x8f043000-0x8f043b5d]
+Oct 22 12:22:49 vismaily kernel: [    0.010529] ACPI: Reserving SSDT table memory at [mem 0x8f03f000-0x8f041f4b]
+Oct 22 12:22:49 vismaily kernel: [    0.010530] ACPI: Reserving SSDT table memory at [mem 0x8f03b000-0x8f03e5cd]
+Oct 22 12:22:49 vismaily kernel: [    0.010531] ACPI: Reserving SSDT table memory at [mem 0x8f032000-0x8f03a973]
+Oct 22 12:22:49 vismaily kernel: [    0.010532] ACPI: Reserving LPIT table memory at [mem 0x8f031000-0x8f0310cb]
+Oct 22 12:22:49 vismaily kernel: [    0.010532] ACPI: Reserving WSMT table memory at [mem 0x8f030000-0x8f030027]
+Oct 22 12:22:49 vismaily kernel: [    0.010533] ACPI: Reserving SSDT table memory at [mem 0x8f02d000-0x8f02f356]
+Oct 22 12:22:49 vismaily kernel: [    0.010534] ACPI: Reserving DBGP table memory at [mem 0x8f02c000-0x8f02c033]
+Oct 22 12:22:49 vismaily kernel: [    0.010535] ACPI: Reserving DBG2 table memory at [mem 0x8f02b000-0x8f02b053]
+Oct 22 12:22:49 vismaily kernel: [    0.010536] ACPI: Reserving NHLT table memory at [mem 0x8f029000-0x8f02a89d]
+Oct 22 12:22:49 vismaily kernel: [    0.010537] ACPI: Reserving POAT table memory at [mem 0x8f028000-0x8f028054]
+Oct 22 12:22:49 vismaily kernel: [    0.010538] ACPI: Reserving SSDT table memory at [mem 0x8f012000-0x8f012fda]
+Oct 22 12:22:49 vismaily kernel: [    0.010539] ACPI: Reserving BATB table memory at [mem 0x8f011000-0x8f011049]
+Oct 22 12:22:49 vismaily kernel: [    0.010540] ACPI: Reserving SSDT table memory at [mem 0x8d209000-0x8d20a299]
+Oct 22 12:22:49 vismaily kernel: [    0.010541] ACPI: Reserving SSDT table memory at [mem 0x8d205000-0x8d2089d9]
+Oct 22 12:22:49 vismaily kernel: [    0.010542] ACPI: Reserving SSDT table memory at [mem 0x8d204000-0x8d204143]
+Oct 22 12:22:49 vismaily kernel: [    0.010543] ACPI: Reserving BGRT table memory at [mem 0x8f013000-0x8f013037]
+Oct 22 12:22:49 vismaily kernel: [    0.010545] ACPI: Reserving PHAT table memory at [mem 0x8d1dd000-0x8d1dd497]
+Oct 22 12:22:49 vismaily kernel: [    0.010546] ACPI: Reserving UEFI table memory at [mem 0x92e8a000-0x92e8a075]
+Oct 22 12:22:49 vismaily kernel: [    0.010547] ACPI: Reserving FPDT table memory at [mem 0x8d1dc000-0x8d1dc033]
+Oct 22 12:22:49 vismaily kernel: [    0.010771] No NUMA configuration found
+Oct 22 12:22:49 vismaily kernel: [    0.010771] Faking a node at [mem 0x0000000000000000-0x0000000a5f7fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010775] NODE_DATA(0) allocated [mem 0xa5f7fc000-0xa5f7fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010814] Zone ranges:
+Oct 22 12:22:49 vismaily kernel: [    0.010815]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010817]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010819]   Normal   [mem 0x0000000100000000-0x0000000a5f7fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010821] Movable zone start for each node
+Oct 22 12:22:49 vismaily kernel: [    0.010822] Early memory node ranges
+Oct 22 12:22:49 vismaily kernel: [    0.010822]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Oct 22 12:22:49 vismaily kernel: [    0.010824]   node   0: [mem 0x0000000000100000-0x000000008cbf3fff]
+Oct 22 12:22:49 vismaily kernel: [    0.010825]   node   0: [mem 0x0000000092fff000-0x0000000092ffffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010826]   node   0: [mem 0x0000000100000000-0x0000000a5f7fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010829] Initmem setup node 0 [mem 0x0000000000001000-0x0000000a5f7fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.010833] On node 0, zone DMA: 1 pages in unavailable ranges
+Oct 22 12:22:49 vismaily kernel: [    0.010857] On node 0, zone DMA: 97 pages in unavailable ranges
+Oct 22 12:22:49 vismaily kernel: [    0.014554] On node 0, zone DMA32: 25611 pages in unavailable ranges
+Oct 22 12:22:49 vismaily kernel: [    0.068613] On node 0, zone Normal: 20480 pages in unavailable ranges
+Oct 22 12:22:49 vismaily kernel: [    0.068632] On node 0, zone Normal: 2048 pages in unavailable ranges
+Oct 22 12:22:49 vismaily kernel: [    0.068652] Reserving Intel graphics memory at [mem 0x9c800000-0xa07fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069731] ACPI: PM-Timer IO Port: 0x1808
+Oct 22 12:22:49 vismaily kernel: [    0.069737] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069739] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069740] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069740] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069741] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069742] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069742] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069743] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069743] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069744] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069744] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069745] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069746] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069746] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069747] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069747] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069748] ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069749] ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069749] ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069750] ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069750] ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069751] ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069752] ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069752] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Oct 22 12:22:49 vismaily kernel: [    0.069789] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Oct 22 12:22:49 vismaily kernel: [    0.069793] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct 22 12:22:49 vismaily kernel: [    0.069797] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 22 12:22:49 vismaily kernel: [    0.069808] ACPI: Using ACPI (MADT) for SMP configuration information
+Oct 22 12:22:49 vismaily kernel: [    0.069810] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Oct 22 12:22:49 vismaily kernel: [    0.069817] e820: update [mem 0x875c3000-0x87653fff] usable ==> reserved
+Oct 22 12:22:49 vismaily kernel: [    0.069826] TSC deadline timer available
+Oct 22 12:22:49 vismaily kernel: [    0.069827] smpboot: Allowing 12 CPUs, 0 hotplug CPUs
+Oct 22 12:22:49 vismaily kernel: [    0.069838] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 22 12:22:49 vismaily kernel: [    0.069840] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069841] PM: hibernation: Registered nosave memory: [mem 0x875c3000-0x87653fff]
+Oct 22 12:22:49 vismaily kernel: [    0.069842] PM: hibernation: Registered nosave memory: [mem 0x885ea000-0x885eafff]
+Oct 22 12:22:49 vismaily kernel: [    0.069844] PM: hibernation: Registered nosave memory: [mem 0x8cbf4000-0x9232efff]
+Oct 22 12:22:49 vismaily kernel: [    0.069844] PM: hibernation: Registered nosave memory: [mem 0x9232f000-0x92f2efff]
+Oct 22 12:22:49 vismaily kernel: [    0.069845] PM: hibernation: Registered nosave memory: [mem 0x92f2f000-0x92ffefff]
+Oct 22 12:22:49 vismaily kernel: [    0.069846] PM: hibernation: Registered nosave memory: [mem 0x93000000-0x96ffffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069847] PM: hibernation: Registered nosave memory: [mem 0x97000000-0x979fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069847] PM: hibernation: Registered nosave memory: [mem 0x97a00000-0x97bfffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069848] PM: hibernation: Registered nosave memory: [mem 0x97c00000-0x983fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069848] PM: hibernation: Registered nosave memory: [mem 0x98400000-0xa07fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069849] PM: hibernation: Registered nosave memory: [mem 0xa0800000-0xfed1ffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069850] PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xfed7ffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069850] PM: hibernation: Registered nosave memory: [mem 0xfed80000-0xffffffff]
+Oct 22 12:22:49 vismaily kernel: [    0.069852] [mem 0xa0800000-0xfed1ffff] available for PCI devices
+Oct 22 12:22:49 vismaily kernel: [    0.069853] Booting paravirtualized kernel on bare hardware
+Oct 22 12:22:49 vismaily kernel: [    0.069855] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Oct 22 12:22:49 vismaily kernel: [    0.077536] setup_percpu: NR_CPUS:64 nr_cpumask_bits:12 nr_cpu_ids:12 nr_node_ids:1
+Oct 22 12:22:49 vismaily kernel: [    0.078103] percpu: Embedded 54 pages/cpu s183272 r8192 d29720 u262144
+Oct 22 12:22:49 vismaily kernel: [    0.078108] pcpu-alloc: s183272 r8192 d29720 u262144 alloc=1*2097152
+Oct 22 12:22:49 vismaily kernel: [    0.078110] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 -- -- -- -- 
+Oct 22 12:22:49 vismaily kernel: [    0.078129] Kernel command line: BOOT_IMAGE=/vmlinuz-6.6.0-vismaily root=/dev/nvme0n1p8 ro
+Oct 22 12:22:49 vismaily kernel: [    0.078152] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.6.0-vismaily", will be passed to user space.
+Oct 22 12:22:49 vismaily kernel: [    0.083814] Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    0.086627] Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    0.086718] Fallback order for Node 0: 0 
+Oct 22 12:22:49 vismaily kernel: [    0.086721] Built 1 zonelists, mobility grouping on.  Total pages: 10242021
+Oct 22 12:22:49 vismaily kernel: [    0.086723] Policy zone: Normal
+Oct 22 12:22:49 vismaily kernel: [    0.086724] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Oct 22 12:22:49 vismaily kernel: [    0.086727] software IO TLB: area num 16.
+Oct 22 12:22:49 vismaily kernel: [    0.168912] Memory: 40639052K/41619020K available (18432K kernel code, 2547K rwdata, 6308K rodata, 2612K init, 1956K bss, 979712K reserved, 0K cma-reserved)
+Oct 22 12:22:49 vismaily kernel: [    0.168971] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=12, Nodes=1
+Oct 22 12:22:49 vismaily kernel: [    0.169909] Dynamic Preempt: voluntary
+Oct 22 12:22:49 vismaily kernel: [    0.169955] rcu: Preemptible hierarchical RCU implementation.
+Oct 22 12:22:49 vismaily kernel: [    0.169956] rcu: ^IRCU event tracing is enabled.
+Oct 22 12:22:49 vismaily kernel: [    0.169957] rcu: ^IRCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=12.
+Oct 22 12:22:49 vismaily kernel: [    0.169959] ^ITrampoline variant of Tasks RCU enabled.
+Oct 22 12:22:49 vismaily kernel: [    0.169960] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 22 12:22:49 vismaily kernel: [    0.169961] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=12
+Oct 22 12:22:49 vismaily kernel: [    0.171299] NR_IRQS: 4352, nr_irqs: 2152, preallocated irqs: 16
+Oct 22 12:22:49 vismaily kernel: [    0.171604] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 22 12:22:49 vismaily kernel: [    0.171839] Console: colour dummy device 80x25
+Oct 22 12:22:49 vismaily kernel: [    0.171842] printk: legacy console [tty0] enabled
+Oct 22 12:22:49 vismaily kernel: [    0.172167] ACPI: Core revision 20230628
+Oct 22 12:22:49 vismaily kernel: [    0.172526] hpet: HPET dysfunctional in PC10. Force disabled.
+Oct 22 12:22:49 vismaily kernel: [    0.172529] APIC: Switch to symmetric I/O mode setup
+Oct 22 12:22:49 vismaily kernel: [    0.174081] x2apic: IRQ remapping doesn't support X2APIC mode
+Oct 22 12:22:49 vismaily kernel: [    0.174431] APIC: Switched APIC routing to: physical flat
+Oct 22 12:22:49 vismaily kernel: [    0.179552] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+Oct 22 12:22:49 vismaily kernel: [    0.179563] Calibrating delay loop (skipped), value calculated using timer frequency.. 5222.40 BogoMIPS (lpj=2611200)
+Oct 22 12:22:49 vismaily kernel: [    0.179637] CPU0: Thermal monitoring enabled (TM1)
+Oct 22 12:22:49 vismaily kernel: [    0.179640] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Oct 22 12:22:49 vismaily kernel: [    0.179781] process: using mwait in idle threads
+Oct 22 12:22:49 vismaily kernel: [    0.179784] CET detected: Indirect Branch Tracking enabled
+Oct 22 12:22:49 vismaily kernel: [    0.179788] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Oct 22 12:22:49 vismaily kernel: [    0.179790] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Oct 22 12:22:49 vismaily kernel: [    0.179795] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 22 12:22:49 vismaily kernel: [    0.179799] Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Oct 22 12:22:49 vismaily kernel: [    0.179801] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct 22 12:22:49 vismaily kernel: [    0.179804] Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Oct 22 12:22:49 vismaily kernel: [    0.179807] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 22 12:22:49 vismaily kernel: [    0.179810] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 22 12:22:49 vismaily kernel: [    0.179825] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 22 12:22:49 vismaily kernel: [    0.179828] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 22 12:22:49 vismaily kernel: [    0.179830] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 22 12:22:49 vismaily kernel: [    0.179833] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Oct 22 12:22:49 vismaily kernel: [    0.179835] x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+Oct 22 12:22:49 vismaily kernel: [    0.179838] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 22 12:22:49 vismaily kernel: [    0.179841] x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+Oct 22 12:22:49 vismaily kernel: [    0.179843] x86/fpu: xstate_offset[11]:  840, xstate_sizes[11]:   16
+Oct 22 12:22:49 vismaily kernel: [    0.179846] x86/fpu: Enabled xstate features 0xa07, context size is 856 bytes, using 'compacted' format.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] Freeing SMP alternatives memory: 48K
+Oct 22 12:22:49 vismaily kernel: [    0.180559] pid_max: default: 32768 minimum: 301
+Oct 22 12:22:49 vismaily kernel: [    0.180559] LSM: initializing lsm=capability,selinux,integrity
+Oct 22 12:22:49 vismaily kernel: [    0.180559] SELinux:  Initializing.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    0.180559] Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    0.180559] smpboot: CPU0: 12th Gen Intel(R) Core(TM) i7-1255U (family: 0x6, model: 0x9a, stepping: 0x4)
+Oct 22 12:22:49 vismaily kernel: [    0.180559] RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] Performance Events: XSAVE Architectural LBR, PEBS fmt4+-baseline,  AnyThread deprecated, Alderlake Hybrid events, 32-deep LBR, full-width counters, Intel PMU driver.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] core: cpu_core PMU driver: 
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... version:                5
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... bit width:              48
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... generic registers:      8
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... value mask:             0000ffffffffffff
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... max period:             00007fffffffffff
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... fixed-purpose events:   4
+Oct 22 12:22:49 vismaily kernel: [    0.180559] ... event mask:             0001000f000000ff
+Oct 22 12:22:49 vismaily kernel: [    0.180559] signal: max sigframe size: 3632
+Oct 22 12:22:49 vismaily kernel: [    0.180559] Estimated ratio of average max frequency by base frequency (times 1024): 1614
+Oct 22 12:22:49 vismaily kernel: [    0.180559] rcu: Hierarchical SRCU implementation.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] rcu: ^IMax phase no-delay instances is 400.
+Oct 22 12:22:49 vismaily kernel: [    0.180559] smp: Bringing up secondary CPUs ...
+Oct 22 12:22:49 vismaily kernel: [    0.180559] smpboot: x86: Booting SMP configuration:
+Oct 22 12:22:49 vismaily kernel: [    0.180559] .... node  #0, CPUs:        #2  #4  #5  #6  #7  #8  #9 #10 #11
+Oct 22 12:22:49 vismaily kernel: [    0.008768] core: cpu_atom PMU driver: PEBS-via-PT 
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... version:                5
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... bit width:              48
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... generic registers:      6
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... value mask:             0000ffffffffffff
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... max period:             00007fffffffffff
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... fixed-purpose events:   3
+Oct 22 12:22:49 vismaily kernel: [    0.008768] ... event mask:             000000070000003f
+Oct 22 12:22:49 vismaily kernel: [    0.184680]   #1  #3
+Oct 22 12:22:49 vismaily kernel: [    0.187596] smp: Brought up 1 node, 12 CPUs
+Oct 22 12:22:49 vismaily kernel: [    0.187604] smpboot: Max logical packages: 1
+Oct 22 12:22:49 vismaily kernel: [    0.187606] smpboot: Total of 12 processors activated (62668.80 BogoMIPS)
+Oct 22 12:22:49 vismaily kernel: [    0.189812] devtmpfs: initialized
+Oct 22 12:22:49 vismaily kernel: [    0.189812] ACPI: PM: Registering ACPI NVS region [mem 0x9232f000-0x92f2efff] (12582912 bytes)
+Oct 22 12:22:49 vismaily kernel: [    0.189812] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 22 12:22:49 vismaily kernel: [    0.189812] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    0.190561] PM: RTC time: 12:22:43, date: 2023-10-22
+Oct 22 12:22:49 vismaily kernel: [    0.190656] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 22 12:22:49 vismaily kernel: [    0.190798] audit: initializing netlink subsys (disabled)
+Oct 22 12:22:49 vismaily kernel: [    0.190805] audit: type=2000 audit(1697977363.011:1): state=initialized audit_enabled=0 res=1
+Oct 22 12:22:49 vismaily kernel: [    0.190805] thermal_sys: Registered thermal governor 'step_wise'
+Oct 22 12:22:49 vismaily kernel: [    0.190805] thermal_sys: Registered thermal governor 'user_space'
+Oct 22 12:22:49 vismaily kernel: [    0.190805] cpuidle: using governor menu
+Oct 22 12:22:49 vismaily kernel: [    0.190805] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff] (base 0xc0000000)
+Oct 22 12:22:49 vismaily kernel: [    0.190805] PCI: not using MMCONFIG
+Oct 22 12:22:49 vismaily kernel: [    0.190805] PCI: Using configuration type 1 for base access
+Oct 22 12:22:49 vismaily kernel: [    0.191595] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Oct 22 12:22:49 vismaily kernel: [    0.191619] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Oct 22 12:22:49 vismaily kernel: [    0.191639] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 22 12:22:49 vismaily kernel: [    0.191639] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 22 12:22:49 vismaily kernel: [    0.191705] ACPI: Added _OSI(Module Device)
+Oct 22 12:22:49 vismaily kernel: [    0.191705] ACPI: Added _OSI(Processor Device)
+Oct 22 12:22:49 vismaily kernel: [    0.191705] ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct 22 12:22:49 vismaily kernel: [    0.191705] ACPI: Added _OSI(Processor Aggregator Device)
+Oct 22 12:22:49 vismaily kernel: [    0.285285] ACPI BIOS Error (bug): Failure creating named object [\_SB.WMI6], AE_ALREADY_EXISTS (20230628/dswload2-326)
+Oct 22 12:22:49 vismaily kernel: [    0.285299] ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20230628/psobject-220)
+Oct 22 12:22:49 vismaily kernel: [    0.285305] ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x5B82)
+Oct 22 12:22:49 vismaily kernel: [    0.300963] ACPI: 18 ACPI AML tables successfully acquired and loaded
+Oct 22 12:22:49 vismaily kernel: [    0.302261] ACPI: EC: EC started
+Oct 22 12:22:49 vismaily kernel: [    0.302263] ACPI: EC: interrupt blocked
+Oct 22 12:22:49 vismaily kernel: [    0.303092] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Oct 22 12:22:49 vismaily kernel: [    0.303095] ACPI: EC: Boot ECDT EC used to handle transactions
+Oct 22 12:22:49 vismaily kernel: [    0.304967] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Oct 22 12:22:49 vismaily kernel: [    0.348686] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.348707] ACPI: SSDT 0xFFFF888101088C00 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.350150] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.350163] ACPI: SSDT 0xFFFF888101084800 000605 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.351632] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.351644] ACPI: SSDT 0xFFFF888101044A00 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.353006] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.353018] ACPI: SSDT 0xFFFF888101085000 000476 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.354794] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.354813] ACPI: SSDT 0xFFFF88810109C000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.356987] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.357001] ACPI: SSDT 0xFFFF88810109E000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.358916] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.358931] ACPI: SSDT 0xFFFF8881010A0000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.360774] ACPI: Dynamic OEM Table Load:
+Oct 22 12:22:49 vismaily kernel: [    0.360787] ACPI: SSDT 0xFFFF888101092000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Oct 22 12:22:49 vismaily kernel: [    0.366695] ACPI: _OSC evaluated successfully for all CPUs
+Oct 22 12:22:49 vismaily kernel: [    0.366698] ACPI: Interpreter enabled
+Oct 22 12:22:49 vismaily kernel: [    0.366769] ACPI: PM: (supports S0 S4 S5)
+Oct 22 12:22:49 vismaily kernel: [    0.366772] ACPI: Using IOAPIC for interrupt routing
+Oct 22 12:22:49 vismaily kernel: [    0.366824] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff] (base 0xc0000000)
+Oct 22 12:22:49 vismaily kernel: [    0.367548] PCI: MMCONFIG at [mem 0xc0000000-0xcfffffff] reserved as ACPI motherboard resource
+Oct 22 12:22:49 vismaily kernel: [    0.367562] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 22 12:22:49 vismaily kernel: [    0.367566] PCI: Ignoring E820 reservations for host bridge windows
+Oct 22 12:22:49 vismaily kernel: [    0.368146] ACPI: Enabled 10 GPEs in block 00 to 7F
+Oct 22 12:22:49 vismaily kernel: [    0.369030] ACPI: \_SB_.PC00.PEG0.PXP_: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.370281] ACPI: \_SB_.PC00.PEG2.PXP_: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.373311] ACPI: \_SB_.PC00.LPCB.EC__.PUBS: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.377878] ACPI: \_SB_.PC00.I2C2.PXTC: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.379600] ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.382683] ACPI: \_SB_.PC00.RP06.PXSX.WRST: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.382708] ACPI: \_SB_.PC00.RP06.PXSX.DRST: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.383325] ACPI: \_SB_.PC00.RP08.PXP_: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.383885] ACPI: \_SB_.PC00.RP09.PXP_: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.392063] ACPI: \_SB_.PC00.TBT0: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.392087] ACPI: \_SB_.PC00.TBT1: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.518532] ACPI: \PIN_: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.518563] ACPI: \PINP: New power resource
+Oct 22 12:22:49 vismaily kernel: [    0.519032] ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+Oct 22 12:22:49 vismaily kernel: [    0.519045] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+Oct 22 12:22:49 vismaily kernel: [    0.520665] acpi PNP0A08:00: _OSC: OS now controls [PME PCIeCapability LTR]
+Oct 22 12:22:49 vismaily kernel: [    0.521538] PCI host bridge to bus 0000:00
+Oct 22 12:22:49 vismaily kernel: [    0.521543] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 22 12:22:49 vismaily kernel: [    0.521548] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 22 12:22:49 vismaily kernel: [    0.521552] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 22 12:22:49 vismaily kernel: [    0.521557] pci_bus 0000:00: root bus resource [mem 0xa0800000-0xbfffffff window]
+Oct 22 12:22:49 vismaily kernel: [    0.521561] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+Oct 22 12:22:49 vismaily kernel: [    0.521566] pci_bus 0000:00: root bus resource [bus 00-fe]
+Oct 22 12:22:49 vismaily kernel: [    0.521963] pci 0000:00:00.0: [8086:4601] type 00 class 0x060000
+Oct 22 12:22:49 vismaily kernel: [    0.522148] pci 0000:00:02.0: [8086:46a8] type 00 class 0x030000
+Oct 22 12:22:49 vismaily kernel: [    0.522163] pci 0000:00:02.0: reg 0x10: [mem 0x601c000000-0x601cffffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.522174] pci 0000:00:02.0: reg 0x18: [mem 0x4000000000-0x400fffffff 64bit pref]
+Oct 22 12:22:49 vismaily kernel: [    0.522183] pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+Oct 22 12:22:49 vismaily kernel: [    0.522208] pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics
+Oct 22 12:22:49 vismaily kernel: [    0.522213] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Oct 22 12:22:49 vismaily kernel: [    0.522413] pci 0000:00:04.0: [8086:461d] type 00 class 0x118000
+Oct 22 12:22:49 vismaily kernel: [    0.522432] pci 0000:00:04.0: reg 0x10: [mem 0x601d180000-0x601d19ffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.522898] pci 0000:00:06.0: [8086:464d] type 01 class 0x060400
+Oct 22 12:22:49 vismaily kernel: [    0.523082] pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.523829] pci 0000:00:07.0: [8086:466e] type 01 class 0x060400
+Oct 22 12:22:49 vismaily kernel: [    0.523924] pci 0000:00:07.0: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.524687] pci 0000:00:08.0: [8086:464f] type 00 class 0x088000
+Oct 22 12:22:49 vismaily kernel: [    0.524701] pci 0000:00:08.0: reg 0x10: [mem 0x601d1d7000-0x601d1d7fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.524830] pci 0000:00:0a.0: [8086:467d] type 00 class 0x118000
+Oct 22 12:22:49 vismaily kernel: [    0.524843] pci 0000:00:0a.0: reg 0x10: [mem 0x601d1c0000-0x601d1c7fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.524870] pci 0000:00:0a.0: enabling Extended Tags
+Oct 22 12:22:49 vismaily kernel: [    0.524986] pci 0000:00:0d.0: [8086:461e] type 00 class 0x0c0330
+Oct 22 12:22:49 vismaily kernel: [    0.525002] pci 0000:00:0d.0: reg 0x10: [mem 0x601d1b0000-0x601d1bffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.525054] pci 0000:00:0d.0: PME# supported from D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.525386] pci 0000:00:0d.2: [8086:463e] type 00 class 0x0c0340
+Oct 22 12:22:49 vismaily kernel: [    0.525402] pci 0000:00:0d.2: reg 0x10: [mem 0x601d140000-0x601d17ffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.525412] pci 0000:00:0d.2: reg 0x18: [mem 0x601d1d6000-0x601d1d6fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.525456] pci 0000:00:0d.2: supports D1 D2
+Oct 22 12:22:49 vismaily kernel: [    0.525459] pci 0000:00:0d.2: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.525603] pci 0000:00:0d.3: [8086:466d] type 00 class 0x0c0340
+Oct 22 12:22:49 vismaily kernel: [    0.525618] pci 0000:00:0d.3: reg 0x10: [mem 0x601d100000-0x601d13ffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.525629] pci 0000:00:0d.3: reg 0x18: [mem 0x601d1d5000-0x601d1d5fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.525672] pci 0000:00:0d.3: supports D1 D2
+Oct 22 12:22:49 vismaily kernel: [    0.525675] pci 0000:00:0d.3: PME# supported from D0 D1 D2 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.525870] pci 0000:00:14.0: [8086:51ed] type 00 class 0x0c0330
+Oct 22 12:22:49 vismaily kernel: [    0.525898] pci 0000:00:14.0: reg 0x10: [mem 0x601d1a0000-0x601d1affff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.526003] pci 0000:00:14.0: PME# supported from D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.526356] pci 0000:00:14.2: [8086:51ef] type 00 class 0x050000
+Oct 22 12:22:49 vismaily kernel: [    0.526382] pci 0000:00:14.2: reg 0x10: [mem 0x601d1cc000-0x601d1cffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.526399] pci 0000:00:14.2: reg 0x18: [mem 0x601d1d4000-0x601d1d4fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.526682] pci 0000:00:15.0: [8086:51e8] type 00 class 0x0c8000
+Oct 22 12:22:49 vismaily kernel: [    0.526767] pci 0000:00:15.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.527162] pci 0000:00:15.2: [8086:51ea] type 00 class 0x0c8000
+Oct 22 12:22:49 vismaily kernel: [    0.527246] pci 0000:00:15.2: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.527805] pci 0000:00:16.0: [8086:51e0] type 00 class 0x078000
+Oct 22 12:22:49 vismaily kernel: [    0.527834] pci 0000:00:16.0: reg 0x10: [mem 0x601d1d1000-0x601d1d1fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.527936] pci 0000:00:16.0: PME# supported from D3hot
+Oct 22 12:22:49 vismaily kernel: [    0.528313] pci 0000:00:1c.0: [8086:51b8] type 01 class 0x060400
+Oct 22 12:22:49 vismaily kernel: [    0.528442] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.529036] pci 0000:00:1c.5: [8086:51bd] type 01 class 0x060400
+Oct 22 12:22:49 vismaily kernel: [    0.529163] pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.529768] pci 0000:00:1f.0: [8086:5182] type 00 class 0x060100
+Oct 22 12:22:49 vismaily kernel: [    0.530233] pci 0000:00:1f.3: [8086:51c8] type 00 class 0x040100
+Oct 22 12:22:49 vismaily kernel: [    0.530285] pci 0000:00:1f.3: reg 0x10: [mem 0x601d1c8000-0x601d1cbfff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.530358] pci 0000:00:1f.3: reg 0x20: [mem 0x601d000000-0x601d0fffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.530475] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.530821] pci 0000:00:1f.4: [8086:51a3] type 00 class 0x0c0500
+Oct 22 12:22:49 vismaily kernel: [    0.530852] pci 0000:00:1f.4: reg 0x10: [mem 0x601d1d0000-0x601d1d00ff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.530888] pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf]
+Oct 22 12:22:49 vismaily kernel: [    0.531222] pci 0000:00:1f.5: [8086:51a4] type 00 class 0x0c8000
+Oct 22 12:22:49 vismaily kernel: [    0.531246] pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+Oct 22 12:22:49 vismaily kernel: [    0.531422] pci 0000:00:1f.6: [8086:1a1f] type 00 class 0x020000
+Oct 22 12:22:49 vismaily kernel: [    0.531476] pci 0000:00:1f.6: reg 0x10: [mem 0xae400000-0xae41ffff]
+Oct 22 12:22:49 vismaily kernel: [    0.531754] pci 0000:00:1f.6: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.533573] pci 0000:01:00.0: [15b7:5016] type 00 class 0x010802
+Oct 22 12:22:49 vismaily kernel: [    0.533592] pci 0000:01:00.0: reg 0x10: [mem 0xae300000-0xae303fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.533821] pci 0000:00:06.0: PCI bridge to [bus 01]
+Oct 22 12:22:49 vismaily kernel: [    0.533828] pci 0000:00:06.0:   bridge window [mem 0xae300000-0xae3fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.533864] pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+Oct 22 12:22:49 vismaily kernel: [    0.533870] pci 0000:00:07.0:   bridge window [mem 0xa2000000-0xae1fffff]
+Oct 22 12:22:49 vismaily kernel: [    0.533876] pci 0000:00:07.0:   bridge window [mem 0x6000000000-0x601bffffff 64bit pref]
+Oct 22 12:22:49 vismaily kernel: [    0.533945] pci 0000:00:1c.0: PCI bridge to [bus 2c]
+Oct 22 12:22:49 vismaily kernel: [    0.534043] pci 0000:2d:00.0: [10ec:b852] type 00 class 0x028000
+Oct 22 12:22:49 vismaily kernel: [    0.534085] pci 0000:2d:00.0: reg 0x10: [io  0x2000-0x20ff]
+Oct 22 12:22:49 vismaily kernel: [    0.534138] pci 0000:2d:00.0: reg 0x18: [mem 0xae200000-0xae2fffff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    0.534391] pci 0000:2d:00.0: PME# supported from D0 D3hot D3cold
+Oct 22 12:22:49 vismaily kernel: [    0.535322] pci 0000:00:1c.5: PCI bridge to [bus 2d]
+Oct 22 12:22:49 vismaily kernel: [    0.535335] pci 0000:00:1c.5:   bridge window [io  0x2000-0x2fff]
+Oct 22 12:22:49 vismaily kernel: [    0.535341] pci 0000:00:1c.5:   bridge window [mem 0xae200000-0xae2fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.106734] Low-power S0 idle used by default for system suspend
+Oct 22 12:22:49 vismaily kernel: [    1.120051] ACPI: EC: interrupt unblocked
+Oct 22 12:22:49 vismaily kernel: [    1.120057] ACPI: EC: event unblocked
+Oct 22 12:22:49 vismaily kernel: [    1.120088] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Oct 22 12:22:49 vismaily kernel: [    1.120091] ACPI: EC: GPE=0x6e
+Oct 22 12:22:49 vismaily kernel: [    1.120095] ACPI: \_SB_.PC00.LPCB.EC__: Boot ECDT EC initialization complete
+Oct 22 12:22:49 vismaily kernel: [    1.120099] ACPI: \_SB_.PC00.LPCB.EC__: EC: Used to handle transactions and events
+Oct 22 12:22:49 vismaily kernel: [    1.120201] iommu: Default domain type: Translated
+Oct 22 12:22:49 vismaily kernel: [    1.120205] iommu: DMA domain TLB invalidation policy: lazy mode
+Oct 22 12:22:49 vismaily kernel: [    1.120288] SCSI subsystem initialized
+Oct 22 12:22:49 vismaily kernel: [    1.120573] libata version 3.00 loaded.
+Oct 22 12:22:49 vismaily kernel: [    1.120599] ACPI: bus type USB registered
+Oct 22 12:22:49 vismaily kernel: [    1.120616] usbcore: registered new interface driver usbfs
+Oct 22 12:22:49 vismaily kernel: [    1.120625] usbcore: registered new interface driver hub
+Oct 22 12:22:49 vismaily kernel: [    1.120636] usbcore: registered new device driver usb
+Oct 22 12:22:49 vismaily kernel: [    1.120653] pps_core: LinuxPPS API ver. 1 registered
+Oct 22 12:22:49 vismaily kernel: [    1.120656] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 22 12:22:49 vismaily kernel: [    1.120662] PTP clock support registered
+Oct 22 12:22:49 vismaily kernel: [    1.120721] efivars: Registered efivars operations
+Oct 22 12:22:49 vismaily kernel: [    1.120721] Advanced Linux Sound Architecture Driver Initialized.
+Oct 22 12:22:49 vismaily kernel: [    1.120819] NetLabel: Initializing
+Oct 22 12:22:49 vismaily kernel: [    1.120823] NetLabel:  domain hash size = 128
+Oct 22 12:22:49 vismaily kernel: [    1.120825] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 22 12:22:49 vismaily kernel: [    1.120858] NetLabel:  unlabeled traffic allowed by default
+Oct 22 12:22:49 vismaily kernel: [    1.121592] PCI: Using ACPI for IRQ routing
+Oct 22 12:22:49 vismaily kernel: [    1.141602] PCI: pci_cache_line_size set to 64 bytes
+Oct 22 12:22:49 vismaily kernel: [    1.142441] pci 0000:00:1f.5: can't claim BAR 0 [mem 0xfe010000-0xfe010fff]: no compatible bridge window
+Oct 22 12:22:49 vismaily kernel: [    1.142540] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142542] e820: reserve RAM buffer [mem 0x875c3000-0x87ffffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142543] e820: reserve RAM buffer [mem 0x885ea000-0x8bffffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142545] e820: reserve RAM buffer [mem 0x8cbf4000-0x8fffffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142546] e820: reserve RAM buffer [mem 0x93000000-0x93ffffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142547] e820: reserve RAM buffer [mem 0xa5f800000-0xa5fffffff]
+Oct 22 12:22:49 vismaily kernel: [    1.142576] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Oct 22 12:22:49 vismaily kernel: [    1.142576] pci 0000:00:02.0: vgaarb: bridge control possible
+Oct 22 12:22:49 vismaily kernel: [    1.142576] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=mem,locks=none
+Oct 22 12:22:49 vismaily kernel: [    1.142579] vgaarb: loaded
+Oct 22 12:22:49 vismaily kernel: [    1.143680] clocksource: Switched to clocksource tsc-early
+Oct 22 12:22:49 vismaily kernel: [    1.143680] VFS: Disk quotas dquot_6.6.0
+Oct 22 12:22:49 vismaily kernel: [    1.143680] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 22 12:22:49 vismaily kernel: [    1.143718] pnp: PnP ACPI init
+Oct 22 12:22:49 vismaily kernel: [    1.144713] system 00:00: [io  0x0680-0x069f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144719] system 00:00: [io  0x164e-0x164f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144863] system 00:01: [io  0x1854-0x1857] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144962] system 00:04: [io  0x1800-0x189f] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144967] system 00:04: [io  0x0800-0x087f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144970] system 00:04: [io  0x0880-0x08ff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144973] system 00:04: [io  0x0900-0x097f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144976] system 00:04: [io  0x0980-0x09ff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144978] system 00:04: [io  0x0a00-0x0a7f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144981] system 00:04: [io  0x0a80-0x0aff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144984] system 00:04: [io  0x0b00-0x0b7f] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144986] system 00:04: [io  0x0b80-0x0bff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144990] system 00:04: [mem 0xc0000000-0xcfffffff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144993] system 00:04: [mem 0xfed10000-0xfed13fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144996] system 00:04: [mem 0xfed18000-0xfed18fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.144999] system 00:04: [mem 0xfed19000-0xfed19fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145002] system 00:04: [mem 0xfeb00000-0xfebfffff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145005] system 00:04: [mem 0xfed20000-0xfed3ffff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145008] system 00:04: [mem 0xfed90000-0xfed93fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145486] system 00:05: [mem 0xfedc0000-0xfedc7fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145491] system 00:05: [mem 0xfeda0000-0xfeda0fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145494] system 00:05: [mem 0xfeda1000-0xfeda1fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145497] system 00:05: [mem 0xc0000000-0xcfffffff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145501] system 00:05: [mem 0xfed20000-0xfed7ffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145504] system 00:05: [mem 0xfed90000-0xfed93fff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145507] system 00:05: [mem 0xfed45000-0xfed8ffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145510] system 00:05: [mem 0xfee00000-0xfeefffff] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.145873] system 00:06: [io  0xff00-0xfffe] has been reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146802] pnp 00:08: disabling [mem 0x000c0000-0x000c3fff] because it overlaps 0000:00:02.0 BAR 6 [mem 0x000c0000-0x000dffff]
+Oct 22 12:22:49 vismaily kernel: [    1.146810] pnp 00:08: disabling [mem 0x000c8000-0x000cbfff] because it overlaps 0000:00:02.0 BAR 6 [mem 0x000c0000-0x000dffff]
+Oct 22 12:22:49 vismaily kernel: [    1.146815] pnp 00:08: disabling [mem 0x000d0000-0x000d3fff] because it overlaps 0000:00:02.0 BAR 6 [mem 0x000c0000-0x000dffff]
+Oct 22 12:22:49 vismaily kernel: [    1.146820] pnp 00:08: disabling [mem 0x000d8000-0x000dbfff] because it overlaps 0000:00:02.0 BAR 6 [mem 0x000c0000-0x000dffff]
+Oct 22 12:22:49 vismaily kernel: [    1.146849] system 00:08: [mem 0x00000000-0x0009ffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146854] system 00:08: [mem 0x000e0000-0x000e3fff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146858] system 00:08: [mem 0x000e8000-0x000ebfff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146861] system 00:08: [mem 0x000f0000-0x000fffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146864] system 00:08: [mem 0x00100000-0xa07fffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146868] system 00:08: [mem 0xfec00000-0xfed3ffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.146871] system 00:08: [mem 0xfed4c000-0xffffffff] could not be reserved
+Oct 22 12:22:49 vismaily kernel: [    1.147049] pnp: PnP ACPI: found 9 devices
+Oct 22 12:22:49 vismaily kernel: [    1.153024] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 22 12:22:49 vismaily kernel: [    1.153063] NET: Registered PF_INET protocol family
+Oct 22 12:22:49 vismaily kernel: [    1.153349] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.157906] tcp_listen_portaddr_hash hash table entries: 32768 (order: 7, 524288 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.157977] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.158002] TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.158718] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.158982] TCP: Hash tables configured (established 524288 bind 65536)
+Oct 22 12:22:49 vismaily kernel: [    1.159030] UDP hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.159174] UDP-Lite hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+Oct 22 12:22:49 vismaily kernel: [    1.159360] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 22 12:22:49 vismaily kernel: [    1.159536] RPC: Registered named UNIX socket transport module.
+Oct 22 12:22:49 vismaily kernel: [    1.159544] RPC: Registered udp transport module.
+Oct 22 12:22:49 vismaily kernel: [    1.159546] RPC: Registered tcp transport module.
+Oct 22 12:22:49 vismaily kernel: [    1.159547] RPC: Registered tcp-with-tls transport module.
+Oct 22 12:22:49 vismaily kernel: [    1.159549] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Oct 22 12:22:49 vismaily kernel: [    1.159558] pci 0000:00:07.0: bridge window [io  0x1000-0x0fff] to [bus 02-2b] add_size 1000
+Oct 22 12:22:49 vismaily kernel: [    1.159572] pci 0000:00:07.0: BAR 7: assigned [io  0x4000-0x4fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159577] pci 0000:00:15.0: BAR 0: assigned [mem 0x4010000000-0x4010000fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    1.159645] pci 0000:00:15.2: BAR 0: assigned [mem 0x4010001000-0x4010001fff 64bit]
+Oct 22 12:22:49 vismaily kernel: [    1.159705] pci 0000:00:1f.5: BAR 0: assigned [mem 0xa0800000-0xa0800fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159720] pci 0000:00:06.0: PCI bridge to [bus 01]
+Oct 22 12:22:49 vismaily kernel: [    1.159749] pci 0000:00:06.0:   bridge window [mem 0xae300000-0xae3fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.159816] pci 0000:00:07.0: PCI bridge to [bus 02-2b]
+Oct 22 12:22:49 vismaily kernel: [    1.159819] pci 0000:00:07.0:   bridge window [io  0x4000-0x4fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159825] pci 0000:00:07.0:   bridge window [mem 0xa2000000-0xae1fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.159829] pci 0000:00:07.0:   bridge window [mem 0x6000000000-0x601bffffff 64bit pref]
+Oct 22 12:22:49 vismaily kernel: [    1.159837] pci 0000:00:1c.0: PCI bridge to [bus 2c]
+Oct 22 12:22:49 vismaily kernel: [    1.159857] pci 0000:00:1c.5: PCI bridge to [bus 2d]
+Oct 22 12:22:49 vismaily kernel: [    1.159861] pci 0000:00:1c.5:   bridge window [io  0x2000-0x2fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159867] pci 0000:00:1c.5:   bridge window [mem 0xae200000-0xae2fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.159878] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 22 12:22:49 vismaily kernel: [    1.159881] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 22 12:22:49 vismaily kernel: [    1.159884] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 22 12:22:49 vismaily kernel: [    1.159887] pci_bus 0000:00: resource 7 [mem 0xa0800000-0xbfffffff window]
+Oct 22 12:22:49 vismaily kernel: [    1.159889] pci_bus 0000:00: resource 8 [mem 0x4000000000-0x7fffffffff window]
+Oct 22 12:22:49 vismaily kernel: [    1.159892] pci_bus 0000:01: resource 1 [mem 0xae300000-0xae3fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.159895] pci_bus 0000:02: resource 0 [io  0x4000-0x4fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159897] pci_bus 0000:02: resource 1 [mem 0xa2000000-0xae1fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.159900] pci_bus 0000:02: resource 2 [mem 0x6000000000-0x601bffffff 64bit pref]
+Oct 22 12:22:49 vismaily kernel: [    1.159903] pci_bus 0000:2d: resource 0 [io  0x2000-0x2fff]
+Oct 22 12:22:49 vismaily kernel: [    1.159905] pci_bus 0000:2d: resource 1 [mem 0xae200000-0xae2fffff]
+Oct 22 12:22:49 vismaily kernel: [    1.160075] pci 0000:00:0d.0: enabling device (0000 -> 0002)
+Oct 22 12:22:49 vismaily kernel: [    1.161295] PCI: CLS 0 bytes, default 64
+Oct 22 12:22:49 vismaily kernel: [    1.161305] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 22 12:22:49 vismaily kernel: [    1.161308] software IO TLB: mapped [mem 0x00000000835c3000-0x00000000875c3000] (64MB)
+Oct 22 12:22:49 vismaily kernel: [    1.161520] RAPL PMU: API unit is 2^-32 Joules, 3 fixed counters, 655360 ms ovfl timer
+Oct 22 12:22:49 vismaily kernel: [    1.161524] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+Oct 22 12:22:49 vismaily kernel: [    1.161526] RAPL PMU: hw unit of domain package 2^-14 Joules
+Oct 22 12:22:49 vismaily kernel: [    1.161528] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+Oct 22 12:22:49 vismaily kernel: [    1.161775] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+Oct 22 12:22:49 vismaily kernel: [    1.161804] clocksource: Switched to clocksource tsc
+Oct 22 12:22:49 vismaily kernel: [    1.161834] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Oct 22 12:22:49 vismaily kernel: [    1.163263] Initialise system trusted keyrings
+Oct 22 12:22:49 vismaily kernel: [    1.163328] workingset: timestamp_bits=40 max_order=24 bucket_order=0
+Oct 22 12:22:49 vismaily kernel: [    1.163451] NFS: Registering the id_resolver key type
+Oct 22 12:22:49 vismaily kernel: [    1.163457] Key type id_resolver registered
+Oct 22 12:22:49 vismaily kernel: [    1.163459] Key type id_legacy registered
+Oct 22 12:22:49 vismaily kernel: [    1.163488] 9p: Installing v9fs 9p2000 file system support
+Oct 22 12:22:49 vismaily kernel: [    1.175041] Key type asymmetric registered
+Oct 22 12:22:49 vismaily kernel: [    1.175044] Asymmetric key parser 'x509' registered
+Oct 22 12:22:49 vismaily kernel: [    1.175055] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Oct 22 12:22:49 vismaily kernel: [    1.175069] io scheduler mq-deadline registered
+Oct 22 12:22:49 vismaily kernel: [    1.175071] io scheduler kyber registered
+Oct 22 12:22:49 vismaily kernel: [    1.175624] pcieport 0000:00:06.0: PME: Signaling with IRQ 120
+Oct 22 12:22:49 vismaily kernel: [    1.175897] pcieport 0000:00:07.0: PME: Signaling with IRQ 121
+Oct 22 12:22:49 vismaily kernel: [    1.176041] pcieport 0000:00:1c.0: PME: Signaling with IRQ 122
+Oct 22 12:22:49 vismaily kernel: [    1.176297] pcieport 0000:00:1c.5: PME: Signaling with IRQ 123
+Oct 22 12:22:49 vismaily kernel: [    1.177315] ACPI: AC: AC Adapter [AC] (on-line)
+Oct 22 12:22:49 vismaily kernel: [    1.177374] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0
+Oct 22 12:22:49 vismaily kernel: [    1.177408] ACPI: button: Sleep Button [SLPB]
+Oct 22 12:22:49 vismaily kernel: [    1.177434] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input1
+Oct 22 12:22:49 vismaily kernel: [    1.177453] ACPI: button: Lid Switch [LID]
+Oct 22 12:22:49 vismaily kernel: [    1.177474] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input2
+Oct 22 12:22:49 vismaily kernel: [    1.177488] ACPI: button: Power Button [PWRB]
+Oct 22 12:22:49 vismaily kernel: [    1.177877] Monitor-Mwait will be used to enter C-1 state
+Oct 22 12:22:49 vismaily kernel: [    1.177881] Monitor-Mwait will be used to enter C-2 state
+Oct 22 12:22:49 vismaily kernel: [    1.177884] Monitor-Mwait will be used to enter C-3 state
+Oct 22 12:22:49 vismaily kernel: [    1.177886] ACPI: \_SB_.PR00: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.178192] ACPI: \_SB_.PR01: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.178549] ACPI: \_SB_.PR02: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.178901] ACPI: \_SB_.PR03: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.179226] ACPI: \_SB_.PR04: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.179540] ACPI: \_SB_.PR05: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.179918] ACPI: \_SB_.PR06: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.180283] ACPI: \_SB_.PR07: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.180660] ACPI: \_SB_.PR08: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.181050] ACPI: \_SB_.PR09: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.181509] ACPI: \_SB_.PR10: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.181823] ACPI: \_SB_.PR11: Found 3 idle states
+Oct 22 12:22:49 vismaily kernel: [    1.182127] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Oct 22 12:22:49 vismaily kernel: [    1.183164] hpet_acpi_add: no address or irqs in _CRS
+Oct 22 12:22:49 vismaily kernel: [    1.183243] Non-volatile memory driver v1.3
+Oct 22 12:22:49 vismaily kernel: [    1.183245] Linux agpgart interface v0.103
+Oct 22 12:22:49 vismaily kernel: [    1.183441] ACPI: bus type drm_connector registered
+Oct 22 12:22:49 vismaily kernel: [    1.183466] i915 0000:00:02.0: enabling device (0006 -> 0007)
+Oct 22 12:22:49 vismaily kernel: [    1.184483] i915 0000:00:02.0: vgaarb: deactivate vga console
+Oct 22 12:22:49 vismaily kernel: [    1.184704] i915 0000:00:02.0: [drm] Transparent Hugepage support is recommended for optimal performance on this platform!
+Oct 22 12:22:49 vismaily kernel: [    1.185495] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io+mem:owns=mem
+Oct 22 12:22:49 vismaily kernel: [    1.185721] i915 0000:00:02.0: Direct firmware load for i915/adlp_dmc.bin failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    1.185732] i915 0000:00:02.0: Direct firmware load for i915/adlp_dmc_ver2_16.bin failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    1.185736] i915 0000:00:02.0: [drm] Failed to load DMC firmware i915/adlp_dmc.bin. Disabling runtime power management.
+Oct 22 12:22:49 vismaily kernel: [    1.185740] i915 0000:00:02.0: [drm] DMC firmware homepage: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915
+Oct 22 12:22:49 vismaily kernel: [    1.196732] i915 0000:00:02.0: [drm] *ERROR* GT0: GuC firmware i915/adlp_guc_70.bin: fetch failed -ENOENT
+Oct 22 12:22:49 vismaily kernel: [    1.196744] i915 0000:00:02.0: [drm] GT0: GuC firmware(s) can be downloaded from https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915
+Oct 22 12:22:49 vismaily kernel: [    1.197677] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 0.0.0
+Oct 22 12:22:49 vismaily kernel: [    1.197756] i915 0000:00:02.0: [drm] *ERROR* GT0: GuC initialization failed -ENOENT
+Oct 22 12:22:49 vismaily kernel: [    1.197761] i915 0000:00:02.0: [drm] *ERROR* GT0: Enabling uc failed (-5)
+Oct 22 12:22:49 vismaily kernel: [    1.197764] i915 0000:00:02.0: [drm] *ERROR* GT0: Failed to initialize GPU, declaring it wedged!
+Oct 22 12:22:49 vismaily kernel: [    1.198293] i915 0000:00:02.0: [drm:add_taint_for_CI] CI tainted:0x9 by intel_gt_init+0xae/0x340
+Oct 22 12:22:49 vismaily kernel: [    1.251779] ACPI: battery: Slot [BAT0] (battery present)
+Oct 22 12:22:49 vismaily kernel: [    2.366055] [drm] Initialized i915 1.6.0 20230929 for 0000:00:02.0 on minor 0
+Oct 22 12:22:49 vismaily kernel: [    2.368249] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Oct 22 12:22:49 vismaily kernel: [    2.368549] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3
+Oct 22 12:22:49 vismaily kernel: [    2.368626] i915 display info: display version: 13
+Oct 22 12:22:49 vismaily kernel: [    2.368629] i915 display info: cursor_needs_physical: no
+Oct 22 12:22:49 vismaily kernel: [    2.368631] i915 display info: has_cdclk_crawl: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368632] i915 display info: has_cdclk_squash: no
+Oct 22 12:22:49 vismaily kernel: [    2.368634] i915 display info: has_ddi: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368635] i915 display info: has_dp_mst: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368636] i915 display info: has_dsb: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368637] i915 display info: has_fpga_dbg: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368638] i915 display info: has_gmch: no
+Oct 22 12:22:49 vismaily kernel: [    2.368640] i915 display info: has_hotplug: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368641] i915 display info: has_hti: no
+Oct 22 12:22:49 vismaily kernel: [    2.368642] i915 display info: has_ipc: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368643] i915 display info: has_overlay: no
+Oct 22 12:22:49 vismaily kernel: [    2.368644] i915 display info: has_psr: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368645] i915 display info: has_psr_hw_tracking: no
+Oct 22 12:22:49 vismaily kernel: [    2.368646] i915 display info: overlay_needs_physical: no
+Oct 22 12:22:49 vismaily kernel: [    2.368647] i915 display info: supports_tv: no
+Oct 22 12:22:49 vismaily kernel: [    2.368648] i915 display info: has_hdcp: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368650] i915 display info: has_dmc: yes
+Oct 22 12:22:49 vismaily kernel: [    2.368651] i915 display info: has_dsc: yes
+Oct 22 12:22:49 vismaily kernel: [    2.369962] fbcon: i915drmfb (fb0) is primary device
+Oct 22 12:22:49 vismaily kernel: [    2.371169] loop: module loaded
+Oct 22 12:22:49 vismaily kernel: [    2.371943] nvme 0000:01:00.0: platform quirk: setting simple suspend
+Oct 22 12:22:49 vismaily kernel: [    2.372027] nvme nvme0: pci function 0000:01:00.0
+Oct 22 12:22:49 vismaily kernel: [    2.372979] e100: Intel(R) PRO/100 Network Driver
+Oct 22 12:22:49 vismaily kernel: [    2.372981] e100: Copyright(c) 1999-2006 Intel Corporation
+Oct 22 12:22:49 vismaily kernel: [    2.372993] e1000: Intel(R) PRO/1000 Network Driver
+Oct 22 12:22:49 vismaily kernel: [    2.372994] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Oct 22 12:22:49 vismaily kernel: [    2.373003] e1000e: Intel(R) PRO/1000 Network Driver
+Oct 22 12:22:49 vismaily kernel: [    2.373003] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Oct 22 12:22:49 vismaily kernel: [    2.373282] e1000e 0000:00:1f.6: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+Oct 22 12:22:49 vismaily kernel: [    2.381216] nvme nvme0: allocated 32 MiB host memory buffer.
+Oct 22 12:22:49 vismaily kernel: [    2.383188] nvme nvme0: 12/0/0 default/read/poll queues
+Oct 22 12:22:49 vismaily kernel: [    2.387864]  nvme0n1: p1 p2 p3 p4 p5 p6 p7 p8 p9
+Oct 22 12:22:49 vismaily kernel: [    2.398893] Console: switching to colour frame buffer device 240x67
+Oct 22 12:22:49 vismaily kernel: [    2.415989] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+Oct 22 12:22:49 vismaily kernel: [    2.570358] e1000e 0000:00:1f.6 0000:00:1f.6 (uninitialized): registered PHC clock
+Oct 22 12:22:49 vismaily kernel: [    2.638217] e1000e 0000:00:1f.6 eth0: (PCI Express:2.5GT/s:Width x1) 9c:2d:cd:d0:89:ae
+Oct 22 12:22:49 vismaily kernel: [    2.638267] e1000e 0000:00:1f.6 eth0: Intel(R) PRO/1000 Network Connection
+Oct 22 12:22:49 vismaily kernel: [    2.638481] e1000e 0000:00:1f.6 eth0: MAC: 15, PHY: 12, PBA No: FFFFFF-0FF
+Oct 22 12:22:49 vismaily kernel: [    2.638537] sky2: driver version 1.30
+Oct 22 12:22:49 vismaily kernel: [    2.638839] xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.639011] xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 1
+Oct 22 12:22:49 vismaily kernel: [    2.640128] xhci_hcd 0000:00:0d.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+Oct 22 12:22:49 vismaily kernel: [    2.640412] xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.640563] xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 2
+Oct 22 12:22:49 vismaily kernel: [    2.640611] xhci_hcd 0000:00:0d.0: Host supports USB 3.2 Enhanced SuperSpeed
+Oct 22 12:22:49 vismaily kernel: [    2.640691] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.06
+Oct 22 12:22:49 vismaily kernel: [    2.640736] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 12:22:49 vismaily kernel: [    2.640782] usb usb1: Product: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.640798] usb usb1: Manufacturer: Linux 6.6.0-rc6-next-20231020 xhci-hcd
+Oct 22 12:22:49 vismaily kernel: [    2.640834] usb usb1: SerialNumber: 0000:00:0d.0
+Oct 22 12:22:49 vismaily kernel: [    2.641087] hub 1-0:1.0: USB hub found
+Oct 22 12:22:49 vismaily kernel: [    2.641127] hub 1-0:1.0: 1 port detected
+Oct 22 12:22:49 vismaily kernel: [    2.641644] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.06
+Oct 22 12:22:49 vismaily kernel: [    2.641691] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 12:22:49 vismaily kernel: [    2.641729] usb usb2: Product: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.641745] usb usb2: Manufacturer: Linux 6.6.0-rc6-next-20231020 xhci-hcd
+Oct 22 12:22:49 vismaily kernel: [    2.641787] usb usb2: SerialNumber: 0000:00:0d.0
+Oct 22 12:22:49 vismaily kernel: [    2.642025] hub 2-0:1.0: USB hub found
+Oct 22 12:22:49 vismaily kernel: [    2.642067] hub 2-0:1.0: 4 ports detected
+Oct 22 12:22:49 vismaily kernel: [    2.643160] usb: port power management may be unreliable
+Oct 22 12:22:49 vismaily kernel: [    2.643982] xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.645897] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+Oct 22 12:22:49 vismaily kernel: [    2.648843] xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000100200009810
+Oct 22 12:22:49 vismaily kernel: [    2.650965] xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.652845] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+Oct 22 12:22:49 vismaily kernel: [    2.654658] xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+Oct 22 12:22:49 vismaily kernel: [    2.656498] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.06
+Oct 22 12:22:49 vismaily kernel: [    2.658293] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 12:22:49 vismaily kernel: [    2.660083] usb usb3: Product: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.661865] usb usb3: Manufacturer: Linux 6.6.0-rc6-next-20231020 xhci-hcd
+Oct 22 12:22:49 vismaily kernel: [    2.663655] usb usb3: SerialNumber: 0000:00:14.0
+Oct 22 12:22:49 vismaily kernel: [    2.665661] hub 3-0:1.0: USB hub found
+Oct 22 12:22:49 vismaily kernel: [    2.667455] hub 3-0:1.0: 12 ports detected
+Oct 22 12:22:49 vismaily kernel: [    2.670707] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.06
+Oct 22 12:22:49 vismaily kernel: [    2.672464] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 22 12:22:49 vismaily kernel: [    2.674224] usb usb4: Product: xHCI Host Controller
+Oct 22 12:22:49 vismaily kernel: [    2.675972] usb usb4: Manufacturer: Linux 6.6.0-rc6-next-20231020 xhci-hcd
+Oct 22 12:22:49 vismaily kernel: [    2.677726] usb usb4: SerialNumber: 0000:00:14.0
+Oct 22 12:22:49 vismaily kernel: [    2.679641] hub 4-0:1.0: USB hub found
+Oct 22 12:22:49 vismaily kernel: [    2.681408] hub 4-0:1.0: 4 ports detected
+Oct 22 12:22:49 vismaily kernel: [    2.683438] usbcore: registered new interface driver usblp
+Oct 22 12:22:49 vismaily kernel: [    2.685168] usbcore: registered new interface driver usb-storage
+Oct 22 12:22:49 vismaily kernel: [    2.686920] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Oct 22 12:22:49 vismaily kernel: [    2.692803] serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 22 12:22:49 vismaily kernel: [    2.694510] serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 22 12:22:49 vismaily kernel: [    2.696589] rtc_cmos rtc_cmos: RTC can wake from S4
+Oct 22 12:22:49 vismaily kernel: [    2.699271] rtc_cmos rtc_cmos: registered as rtc0
+Oct 22 12:22:49 vismaily kernel: [    2.700991] rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram
+Oct 22 12:22:49 vismaily kernel: [    2.702687] fail to initialize ptp_kvm
+Oct 22 12:22:49 vismaily kernel: [    2.702816] i801_smbus 0000:00:1f.4: enabling device (0001 -> 0003)
+Oct 22 12:22:49 vismaily kernel: [    2.704733] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+Oct 22 12:22:49 vismaily kernel: [    2.704877] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
+Oct 22 12:22:49 vismaily kernel: [    2.705395] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Oct 22 12:22:49 vismaily kernel: [    2.705409] intel_pstate: Intel P-state driver initializing
+Oct 22 12:22:49 vismaily kernel: [    2.705670] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+Oct 22 12:22:49 vismaily kernel: [    2.713908] intel_pstate: HWP enabled
+Oct 22 12:22:49 vismaily kernel: [    2.713959] i2c i2c-12: 2/8 memory slots populated (from DMI)
+Oct 22 12:22:49 vismaily kernel: [    2.714649] hid: raw HID events driver (C) Jiri Kosina
+Oct 22 12:22:49 vismaily kernel: [    2.715098] i2c i2c-12: Systems with more than 4 memory slots not supported yet, not instantiating SPD
+Oct 22 12:22:49 vismaily kernel: [    2.716840] usbcore: registered new interface driver usbhid
+Oct 22 12:22:49 vismaily kernel: [    2.717322] usbhid: USB HID core driver
+Oct 22 12:22:49 vismaily kernel: [    2.718144] snd_hda_intel 0000:00:1f.3: DSP detected with PCI class/subclass/prog-if info 0x040100
+Oct 22 12:22:49 vismaily kernel: [    2.718721] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops)
+Oct 22 12:22:49 vismaily kernel: [    2.719700] Initializing XFRM netlink socket
+Oct 22 12:22:49 vismaily kernel: [    2.720182] NET: Registered PF_INET6 protocol family
+Oct 22 12:22:49 vismaily kernel: [    2.721412] Segment Routing with IPv6
+Oct 22 12:22:49 vismaily kernel: [    2.721885] In-situ OAM (IOAM) with IPv6
+Oct 22 12:22:49 vismaily kernel: [    2.722359] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Oct 22 12:22:49 vismaily kernel: [    2.722905] NET: Registered PF_PACKET protocol family
+Oct 22 12:22:49 vismaily kernel: [    2.723385] 9pnet: Installing 9P2000 support
+Oct 22 12:22:49 vismaily kernel: [    2.723855] Key type dns_resolver registered
+Oct 22 12:22:49 vismaily kernel: [    2.725845] microcode: Microcode Update Driver: v2.2.
+Oct 22 12:22:49 vismaily kernel: [    2.725855] IPI shorthand broadcast: enabled
+Oct 22 12:22:49 vismaily kernel: [    2.727703] sched_clock: Marking stable (2719000865, 7768334)->(2761353820, -34584621)
+Oct 22 12:22:49 vismaily kernel: [    2.729476] registered taskstats version 1
+Oct 22 12:22:49 vismaily kernel: [    2.729932] Loading compiled-in X.509 certificates
+Oct 22 12:22:49 vismaily kernel: [    2.731132] PM:   Magic number: 11:772:380
+Oct 22 12:22:49 vismaily kernel: [    2.731623] platform ACPI0007:30: hash matches
+Oct 22 12:22:49 vismaily kernel: [    2.732089] acpi ACPI0007:30: hash matches
+Oct 22 12:22:49 vismaily kernel: [    2.732554] printk: legacy console [netcon0] enabled
+Oct 22 12:22:49 vismaily kernel: [    2.733013] netconsole: network logging started
+Oct 22 12:22:49 vismaily kernel: [    2.733504] ALSA device list:
+Oct 22 12:22:49 vismaily kernel: [    2.733953]   No soundcards found.
+Oct 22 12:22:49 vismaily kernel: [    2.743274] snd_hda_intel 0000:00:1f.3: Cannot probe codecs, giving up
+Oct 22 12:22:49 vismaily kernel: [    2.908948] usb 3-6: new high-speed USB device number 2 using xhci_hcd
+Oct 22 12:22:49 vismaily kernel: [    3.043651] usb 3-6: config 1 interface 0 altsetting 0 bulk endpoint 0x82 has invalid maxpacket 64
+Oct 22 12:22:49 vismaily kernel: [    3.051964] usb 3-6: New USB device found, idVendor=10a5, idProduct=9800, bcdDevice=23.22
+Oct 22 12:22:49 vismaily kernel: [    3.056660] usb 3-6: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 22 12:22:49 vismaily kernel: [    3.060430] usb 3-6: Product: FPC Sensor Controller L:0002 FW:16.26.23.22
+Oct 22 12:22:49 vismaily kernel: [    3.062620] usb 3-6: Manufacturer: FPC
+Oct 22 12:22:49 vismaily kernel: [    3.182958] usb 3-7: new high-speed USB device number 3 using xhci_hcd
+Oct 22 12:22:49 vismaily kernel: [    3.321676] usb 3-7: New USB device found, idVendor=174f, idProduct=1811, bcdDevice= 0.24
+Oct 22 12:22:49 vismaily kernel: [    3.326366] usb 3-7: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+Oct 22 12:22:49 vismaily kernel: [    3.328254] usb 3-7: Product: Integrated Camera
+Oct 22 12:22:49 vismaily kernel: [    3.329153] usb 3-7: Manufacturer:  
+Oct 22 12:22:49 vismaily kernel: [    3.329988] usb 3-7: SerialNumber: 0001
+Oct 22 12:22:49 vismaily kernel: [    3.426480] input: PS/2 Logitech Wheel Mouse as /devices/platform/i8042/serio1/input/input6
+Oct 22 12:22:49 vismaily kernel: [    3.434767] md: Waiting for all devices to be available before autodetect
+Oct 22 12:22:49 vismaily kernel: [    3.436734] md: If you don't use raid, use raid=noautodetect
+Oct 22 12:22:49 vismaily kernel: [    3.438904] md: Autodetecting RAID arrays.
+Oct 22 12:22:49 vismaily kernel: [    3.440281] md: autorun ...
+Oct 22 12:22:49 vismaily kernel: [    3.440883] md: ... autorun DONE.
+Oct 22 12:22:49 vismaily kernel: [    3.445333] EXT4-fs (nvme0n1p8): mounted filesystem f886bd17-b8aa-4a7f-bc8b-6c2ee5fe86d1 ro with ordered data mode. Quota mode: none.
+Oct 22 12:22:49 vismaily kernel: [    3.446478] VFS: Mounted root (ext4 filesystem) readonly on device 259:8.
+Oct 22 12:22:49 vismaily kernel: [    3.448015] devtmpfs: mounted
+Oct 22 12:22:49 vismaily kernel: [    3.448910] usb 3-10: new full-speed USB device number 4 using xhci_hcd
+Oct 22 12:22:49 vismaily kernel: [    3.450969] Freeing unused kernel image (initmem) memory: 2612K
+Oct 22 12:22:49 vismaily kernel: [    3.454039] Write protecting the kernel read-only data: 26624k
+Oct 22 12:22:49 vismaily kernel: [    3.457176] Freeing unused kernel image (rodata/data gap) memory: 1884K
+Oct 22 12:22:49 vismaily kernel: [    3.463700] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 22 12:22:49 vismaily kernel: [    3.464278] Run /sbin/init as init process
+Oct 22 12:22:49 vismaily kernel: [    3.464846]   with arguments:
+Oct 22 12:22:49 vismaily kernel: [    3.464847]     /sbin/init
+Oct 22 12:22:49 vismaily kernel: [    3.464847]   with environment:
+Oct 22 12:22:49 vismaily kernel: [    3.464848]     HOME=/
+Oct 22 12:22:49 vismaily kernel: [    3.464848]     TERM=linux
+Oct 22 12:22:49 vismaily kernel: [    3.464849]     BOOT_IMAGE=/vmlinuz-6.6.0-vismaily
+Oct 22 12:22:49 vismaily kernel: [    3.482574] stty (128) used greatest stack depth: 13808 bytes left
+Oct 22 12:22:49 vismaily kernel: [    3.487446] dmesg (129) used greatest stack depth: 13608 bytes left
+Oct 22 12:22:49 vismaily kernel: [    3.510289] sed (141) used greatest stack depth: 13392 bytes left
+Oct 22 12:22:49 vismaily kernel: [    3.563695] ip (229) used greatest stack depth: 13032 bytes left
+Oct 22 12:22:49 vismaily kernel: [    3.577738] usb 3-10: New USB device found, idVendor=0bda, idProduct=4853, bcdDevice= 0.00
+Oct 22 12:22:49 vismaily kernel: [    3.577742] usb 3-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 22 12:22:49 vismaily kernel: [    3.577744] usb 3-10: Product: Bluetooth Radio
+Oct 22 12:22:49 vismaily kernel: [    3.577745] usb 3-10: Manufacturer: Realtek
+Oct 22 12:22:49 vismaily kernel: [    3.577746] usb 3-10: SerialNumber: 00e04c000001
+Oct 22 12:22:49 vismaily kernel: <30>[    3.582110] udevd[254]: Starting systemd-udevd version 254
+Oct 22 12:22:49 vismaily kernel: <30>[    3.584262] udevd[255]: Using default interface naming scheme 'v253'.
+Oct 22 12:22:49 vismaily kernel: [    3.644295] e1000e 0000:00:1f.6 enp0s31f6: renamed from eth0
+Oct 22 12:22:49 vismaily kernel: <28>[    3.646789] (udev-worke[264]: 3-10:1.1: Process '/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko' failed with exit code 1.
+Oct 22 12:22:49 vismaily kernel: <28>[    3.646813] (udev-worke[267]: 3-7:1.2: Process '/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko' failed with exit code 1.
+Oct 22 12:22:49 vismaily kernel: <28>[    3.646818] (udev-worke[286]: 3-10:1.0: Process '/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko' failed with exit code 1.
+Oct 22 12:22:49 vismaily kernel: <28>[    3.646870] (udev-worke[299]: 3-7:1.4: Process '/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko' failed with exit code 1.
+Oct 22 12:22:49 vismaily kernel: <28>[    3.647034] (udev-worke[265]: 3-7:1.3: Process '/usr/sbin/insmod /root/Little-penguin-1/ex04/main.ko' failed with exit code 1.
+Oct 22 12:22:49 vismaily kernel: [    3.660315] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Oct 22 12:22:49 vismaily kernel: [    3.663220] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Oct 22 12:22:49 vismaily kernel: [    3.664156] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    3.664990] cfg80211: failed to load regulatory.db
+Oct 22 12:22:49 vismaily kernel: [    3.681538] rtw89_8852be 0000:2d:00.0: Direct firmware load for rtw89/rtw8852b_fw-1.bin failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    3.682600] rtw89_8852be 0000:2d:00.0: Direct firmware load for rtw89/rtw8852b_fw.bin failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    3.683641] rtw89_8852be 0000:2d:00.0: failed to early request firmware: -2
+Oct 22 12:22:49 vismaily kernel: [    3.684351] rtw89_8852be 0000:2d:00.0: Direct firmware load for rtw89/rtw8852b_fw.bin failed with error -2
+Oct 22 12:22:49 vismaily kernel: [    3.684993] rtw89_8852be 0000:2d:00.0: enabling device (0000 -> 0003)
+Oct 22 12:22:49 vismaily kernel: [    3.687126] rtw89_8852be 0000:2d:00.0: failed to wait firmware completion
+Oct 22 12:22:49 vismaily kernel: [    3.687298] udevadm (307) used greatest stack depth: 13024 bytes left
+Oct 22 12:22:49 vismaily kernel: [    3.688014] rtw89_8852be 0000:2d:00.0: failed to setup chip information
+Oct 22 12:22:49 vismaily kernel: [    3.689599] rtw89_8852be: probe of 0000:2d:00.0 failed with error -22
+Oct 22 12:22:49 vismaily kernel: [    4.338361] Adding 3145724k swap on /dev/nvme0n1p9.  Priority:1 extents:1 across:3145724k SS
+Oct 22 12:22:49 vismaily kernel: [    4.370004] EXT4-fs (nvme0n1p8): re-mounted f886bd17-b8aa-4a7f-bc8b-6c2ee5fe86d1 ro. Quota mode: none.
+Oct 22 12:22:49 vismaily kernel: [    4.445397] EXT4-fs (nvme0n1p8): re-mounted f886bd17-b8aa-4a7f-bc8b-6c2ee5fe86d1 r/w. Quota mode: none.
+Oct 22 12:22:49 vismaily kernel: [    4.470745] EXT4-fs (nvme0n1p7): mounted filesystem 2d4cedde-f526-4936-808c-a8edb0d4228d r/w with ordered data mode. Quota mode: none.
+Oct 22 12:22:49 vismaily kernel: [    5.660269] ip (505) used greatest stack depth: 12264 bytes left
