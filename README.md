@@ -185,6 +185,7 @@ dmesg | tail -1
     ```sh
     mount -t debugfs none /sys/kernel/debug/
     ```
+  - [Kernel documentation about debugfs](https://docs.kernel.org/filesystems/debugfs.html)
 
 ----------
 
