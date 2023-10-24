@@ -6,14 +6,11 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/23 20:25:08 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/24 16:03:43 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
+#include "debugfs_module.h"
 
 MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a debugfs module");
@@ -26,6 +23,12 @@ static struct dentry	*db_id;
 static struct dentry	*db_jiffies;
 static struct dentry	*db_foo;
 
+struct file_operations	id_fops = {
+	owner	: THIS_MODULE,
+	read	: id_read,
+	write	: id_write,
+};
+
 static int __init debugfs_init(void)
 {
 	db_fortytwo = debugfs_create_dir("fortytwo", NULL);
@@ -35,7 +38,7 @@ static int __init debugfs_init(void)
 		return (-1);
 	}
 
-	db_id = debugfs_create_file("id", 0666, db_fortytwo, NULL, NULL);
+	db_id = debugfs_create_file("id", 0666, db_fortytwo, NULL, &id_fops);
 	if (!db_fortytwo)
 		goto clean_fortytwo;
 
