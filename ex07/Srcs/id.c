@@ -6,16 +6,17 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/24 12:33:49 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/24 16:48:07 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "debugfs_module.h"
+#include "my_debugfs.h"
 
 #define USERNAME	"vismaily"
 #define USERNAME_LEN	8
 
- ssize_t id_read(struct file *f, char __user *buf, size_t len, loff_t *offset)
+static ssize_t id_read(struct file *f, char __user *buf, size_t len,
+				loff_t *offset)
 {
 	int	readlen;
 	size_t	copied;
@@ -34,8 +35,8 @@
 	return (copied);
 }
 
-ssize_t id_write(struct file *f, const char __user *buf, size_t len,
-			loff_t *offset)
+static ssize_t id_write(struct file *f, const char __user *buf, size_t len,
+				loff_t *offset)
 {
 	char	user_data[USERNAME_LEN];
 
@@ -48,3 +49,9 @@ ssize_t id_write(struct file *f, const char __user *buf, size_t len,
 	pr_info("Username %s was received successfully", USERNAME);
 	return (len);
 }
+
+const struct file_operations	fops_id = {
+	owner	: THIS_MODULE,
+	read	: id_read,
+	write	: id_write,
+};
