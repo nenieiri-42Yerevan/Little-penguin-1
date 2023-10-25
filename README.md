@@ -179,6 +179,9 @@ dmesg | tail -1
 
 ### ex07:
 **Instructions**:
+  - Write a kernel module that uses debugfs.
+  - You have to create a subdirectory in which you can find 3 special files handled by your driver.
+  - They all must have specific access rights and behavior.
 
 **Notes**
   - To create a directory in /sys/kernel/debug we first need to mount debugfs using this command:
