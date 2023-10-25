@@ -190,6 +190,7 @@ dmesg | tail -1
     ```
   - [Kernel documentation about debugfs](https://docs.kernel.org/filesystems/debugfs.html)
   - [Jiffies](https://litux.nl/mirror/kerneldevelopment/0672327201/ch10lev1sec3.html)
+  - [Mutex](https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-tutorial-mutex-in-linux-kernel/)
 
 ----------
 
