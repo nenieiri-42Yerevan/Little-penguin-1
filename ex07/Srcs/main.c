@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/24 16:48:45 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/25 12:09:12 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,11 @@ static int __init debugfs_init(void)
 	if (!db_fortytwo)
 		goto clean_fortytwo;
 
-	db_jiffies = debugfs_create_file("jiffies", 0444, db_fortytwo,
-			NULL, NULL);
-	if (!db_jiffies)
-		goto clean_id;
+#if BITS_PER_LONG == 64
+	debugfs_create_u64("jiffies", 0444, db_fortytwo, (u64*) &jiffies);
+#else
+	debugfs_create_u32("jiffies", 0444, db_fortytwo, (u32*) &jiffies);
+#endif
 
 	db_foo = debugfs_create_file("foo", 0644, db_fortytwo, NULL, NULL);
 	if (!db_foo)
@@ -50,7 +51,6 @@ static int __init debugfs_init(void)
 
 clean_jiffies:
 	debugfs_remove(db_jiffies);
-clean_id:
 	debugfs_remove(db_id);
 clean_fortytwo:
 	debugfs_remove(db_fortytwo);

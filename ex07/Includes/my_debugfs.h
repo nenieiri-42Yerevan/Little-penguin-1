@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   debugfs_module.h                                   :+:      :+:    :+:   */
+/*   my_debugfs.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 12:29:08 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/24 16:44:38 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/25 11:21:34 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <linux/init.h>
 # include <linux/debugfs.h>
 # include <linux/fs.h>
+# include <linux/jiffies.h>
 
 extern const struct file_operations	fops_id;
 
