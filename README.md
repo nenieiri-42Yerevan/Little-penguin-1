@@ -186,6 +186,7 @@ dmesg | tail -1
     mount -t debugfs none /sys/kernel/debug/
     ```
   - [Kernel documentation about debugfs](https://docs.kernel.org/filesystems/debugfs.html)
+  - [Jiffies](https://litux.nl/mirror/kerneldevelopment/0672327201/ch10lev1sec3.html)
 
 ----------
 
