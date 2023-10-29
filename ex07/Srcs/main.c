@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/25 12:09:12 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/27 16:43:20 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a debugfs module");
 MODULE_VERSION("1.0.0");
 MODULE_LICENSE("GPL");
-MODULE_INFO(intree, "Y");
 
 static struct dentry	*db_fortytwo;
 static struct dentry	*db_id;
@@ -42,7 +41,7 @@ static int __init debugfs_init(void)
 	debugfs_create_u32("jiffies", 0444, db_fortytwo, (u32*) &jiffies);
 #endif
 
-	db_foo = debugfs_create_file("foo", 0644, db_fortytwo, NULL, NULL);
+	db_foo = debugfs_create_file("foo", 0644, db_fortytwo, NULL, &fops_foo);
 	if (!db_foo)
 		goto clean_jiffies;
 

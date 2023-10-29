@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:44:37 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/25 14:44:20 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/10/29 11:42:56 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ static ssize_t foo_read(struct file *f, char __user *buf, size_t len,
 	int	readlen;
 	int	copied;
 
-	
 	mutex_lock(&foo_mutex);
 	if (!buf)
 	{
@@ -43,7 +42,7 @@ static ssize_t foo_read(struct file *f, char __user *buf, size_t len,
 		readlen = len;
 
 	copied = readlen - copy_to_user(buf, foo_buff + *offset, readlen);
-	offset += copied;
+	*offset += copied;
 	mutex_unlock(&foo_mutex);
 	return (copied);
 }
@@ -66,6 +65,7 @@ static ssize_t foo_write(struct file *f, const char __user *buf, size_t len,
 		foo_buff_len = len - not_copied;
 		return (-EFAULT);
 	}
+
 	foo_buff_len = len;
 	mutex_unlock(&foo_mutex);
 	return (len);

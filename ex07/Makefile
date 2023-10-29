@@ -6,13 +6,13 @@
 #    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 12:52:01 by vismaily          #+#    #+#              #
-#    Updated: 2023/10/24 16:29:09 by vismaily         ###   ########.fr        #
+#    Updated: 2023/10/27 18:25:57 by vismaily         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 obj-m		= my_module.o
 
-my_module-y	= /Srcs/id.o /Srcs/main.o
+my_module-y	= /Srcs/id.o /Srcs/main.o /Srcs/foo.o
 
 ccflags-y	= -I$(src)/Includes
 
@@ -27,3 +27,5 @@ chmod:
 
 clean:
 		make -C /lib/modules/$(K-VERSION)/build M=$(shell pwd) clean
+
+re:		clean all
