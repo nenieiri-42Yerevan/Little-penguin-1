@@ -205,6 +205,11 @@ dmesg | tail -1
 
 ### ex09:
 **Instructions**:
+  - Write a kernel module that exposes a file called mymounts on the root of the procfs.
+  - It has to list mount points on the system and their associated names.
+
+**Notes**
+  - [procfs](https://embetronicx.com/tutorials/linux/device-drivers/procfs-in-linux/)
 
 ----------
 
