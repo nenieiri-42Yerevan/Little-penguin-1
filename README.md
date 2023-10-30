@@ -196,6 +196,10 @@ dmesg | tail -1
 
 ### ex08:
 **Instructions**:
+  - Take a given file, fix the coding style, and fix the code's behavior.
+
+**Notes**
+  - [Linux coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
 
 ----------
 
