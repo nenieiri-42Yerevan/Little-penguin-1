@@ -209,7 +209,8 @@ dmesg | tail -1
   - It has to list mount points on the system and their associated names.
 
 **Notes**
-  - [procfs](https://embetronicx.com/tutorials/linux/device-drivers/procfs-in-linux/)
+  - [Procfs](https://embetronicx.com/tutorials/linux/device-drivers/procfs-in-linux/)
+  - [Linked lists in kernel](https://www.oreilly.com/library/view/linux-device-drivers/0596000081/ch10s05.html)
 
 ----------
 
