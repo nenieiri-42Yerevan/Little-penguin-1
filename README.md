@@ -211,6 +211,7 @@ dmesg | tail -1
 **Notes**
   - [Procfs](https://embetronicx.com/tutorials/linux/device-drivers/procfs-in-linux/)
   - [Linked lists in kernel](https://www.oreilly.com/library/view/linux-device-drivers/0596000081/ch10s05.html)
+  - [Mounts](https://www.oreilly.com/library/view/understanding-the-linux/0596002130/ch12s04.html)
 
 ----------
 
