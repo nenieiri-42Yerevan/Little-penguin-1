@@ -6,11 +6,11 @@
 #    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 12:38:28 by vismaily          #+#    #+#              #
-#    Updated: 2023/10/30 18:55:59 by vismaily         ###   ########.fr        #
+#    Updated: 2023/10/30 19:16:23 by vismaily         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-obj-m		= main.o
+obj-m		= mymounts.o
 
 K-VERSION	= $(shell uname -r)
 
