@@ -211,6 +211,8 @@ dmesg | tail -1
 **Notes**
   - [Procfs](https://embetronicx.com/tutorials/linux/device-drivers/procfs-in-linux/)
   - [Linked lists in the kernel](https://www.oreilly.com/library/view/linux-device-drivers/0596000081/ch10s05.html)
+  - [Linked lists in the kernel (Tutorial 1)](https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-tutorial-part-17-linked-list-in-linux-kernel/)
+  - [Linked lists in the kernel (Tutorial 2)](https://embetronicx.com/tutorials/linux/device-drivers/example-linked-list-in-linux-kernel/)
   - [Linked lists in the kernel (detailed implementation)](https://kernelnewbies.org/FAQ/LinkedLists)
   - [list_for_each_entry](https://stackoverflow.com/questions/16230524/explain-list-for-each-entry-and-list-for-each-entry-safe)
   - [Mounts](https://www.oreilly.com/library/view/understanding-the-linux/0596002130/ch12s04.html)
