@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/27 16:43:20 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:27:46 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int __init debugfs_init(void)
 	if (!db_fortytwo)
 	{
 		pr_err("Failed to create 'fortytwo' directory in debugfs");
-		return (-1);
+		return -1;
 	}
 
 	db_id = debugfs_create_file("id", 0666, db_fortytwo, NULL, &fops_id);
@@ -46,14 +46,14 @@ static int __init debugfs_init(void)
 		goto clean_jiffies;
 
 	printk(KERN_INFO "Inserting debugfs module!\n");
-	return (0);
+	return 0;
 
 clean_jiffies:
 	debugfs_remove(db_jiffies);
 	debugfs_remove(db_id);
 clean_fortytwo:
 	debugfs_remove(db_fortytwo);
-	return (-1);
+	return -1;
 }
 
 static void __exit debugfs_cleanup(void)

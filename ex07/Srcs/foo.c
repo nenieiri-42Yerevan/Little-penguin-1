@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:44:37 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/29 11:42:56 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:27:23 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ static ssize_t foo_read(struct file *f, char __user *buf, size_t len,
 	if (!buf)
 	{
 		mutex_unlock(&foo_mutex);
-		return (-EINVAL);
+		return -EINVAL;
 	}
 	
 	if (*offset >= foo_buff_len)
 	{
 		mutex_unlock(&foo_mutex);
-		return (0);
+		return 0;
 	}
 
 	if (len + *offset >= foo_buff_len)
@@ -44,7 +44,7 @@ static ssize_t foo_read(struct file *f, char __user *buf, size_t len,
 	copied = readlen - copy_to_user(buf, foo_buff + *offset, readlen);
 	*offset += copied;
 	mutex_unlock(&foo_mutex);
-	return (copied);
+	return copied;
 }
 
 static ssize_t foo_write(struct file *f, const char __user *buf, size_t len,
@@ -55,7 +55,7 @@ static ssize_t foo_write(struct file *f, const char __user *buf, size_t len,
 	mutex_lock(&foo_mutex);
 	if (len > PAGE_SIZE) {
 		mutex_unlock(&foo_mutex);
-		return (-EINVAL);
+		return -EINVAL;
 	}
 
 	not_copied = copy_from_user(foo_buff, buf, len);
@@ -63,12 +63,12 @@ static ssize_t foo_write(struct file *f, const char __user *buf, size_t len,
 	{
 		mutex_unlock(&foo_mutex);
 		foo_buff_len = len - not_copied;
-		return (-EFAULT);
+		return -EFAULT;
 	}
 
 	foo_buff_len = len;
 	mutex_unlock(&foo_mutex);
-	return (len);
+	return len;
 }
 
 const struct file_operations	fops_foo = {

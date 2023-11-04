@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 18:57:03 by vismaily          #+#    #+#             */
-/*   Updated: 2023/11/03 16:10:03 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:30:11 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,12 +79,12 @@ static int procfs_show(struct seq_file *m, void *v)
 	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list) {
 		show_mount_info(m, mnt);
 	}
-	return (0);
+	return 0;
 }
 
 static int procfs_open(struct inode *inode, struct file *file)
 {
-	return (single_open(file, procfs_show, NULL));
+	return single_open(file, procfs_show, NULL);
 }
 
 static struct proc_ops	proc_fops = {
@@ -100,10 +100,10 @@ static int __init procfs_init(void)
 	if (!mymounts)
 	{
 		pr_info("Errot when creating the proc device.\n");
-		return (-ENOMEM);
+		return -ENOMEM;
 	}
 	pr_info("Proc device created.\n");
-	return (0);
+	return 0;
 }
 
 static void __exit procfs_exit(void)

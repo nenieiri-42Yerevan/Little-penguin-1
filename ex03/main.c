@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:53:31 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/11 17:50:34 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:22:49 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int do_work(int *my_int)
 		udelay(10);
 	if (y < 10)
 		pr_info("We slept a long time!");
-	return (y * y);
+	return y * y;
 }
 
 int my_init(void)

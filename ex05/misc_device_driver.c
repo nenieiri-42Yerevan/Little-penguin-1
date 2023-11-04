@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/21 16:44:03 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:25:26 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ ft_read(struct file *f, char __user *buf, size_t len, loff_t *offset)
 	size_t	copied;
 
 	if (!buf)
-		return (-EINVAL);
+		return -EINVAL;
 	if (*offset >= USERNAME_LEN)
-		return (0);
+		return 0;
 	if (*offset + len > USERNAME_LEN)
 		readlen = USERNAME_LEN - *offset;
 	else
@@ -48,7 +48,7 @@ ft_read(struct file *f, char __user *buf, size_t len, loff_t *offset)
 	copied = readlen - copy_to_user(buf, USERNAME + *offset, readlen);
 	*offset += copied;
 	pr_info("Username %s (or it's part) was sent successfully", USERNAME);
-	return (copied);
+	return copied;
 }
 
 /*
@@ -61,13 +61,13 @@ ft_write(struct file *f, const char __user *buf,
 	char	user_data[USERNAME_LEN];
 
 	if (!buf || len != USERNAME_LEN)
-		return (-EINVAL);
+		return -EINVAL;
 	if (copy_from_user(user_data, buf, len))
-		return (-EIO);
+		return -EIO;
 	if (memcmp(user_data, USERNAME, USERNAME_LEN))
-		return (-EINVAL);
+		return -EINVAL;
 	pr_info("Username %s was received successfully", USERNAME);
-	return (len);
+	return len;
 }
 
 static int __init ft_driver_init(void)
@@ -83,11 +83,11 @@ static int __init ft_driver_init(void)
 	if (misc_register(&misc_device))
 	{
 		pr_err("misc_register failed!!! :(\n");
-		return (-1);
+		return -1;
 	}
 
 	pr_info("Fortytwo misc device driver inserted successfully :)\n");
-	return (0);
+	return 0;
 }
 
 static void __exit ft_driver_exit(void)

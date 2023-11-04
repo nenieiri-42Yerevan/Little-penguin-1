@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/10/08 18:42:59 by vismaily         ###   ########.fr       */
+/*   Updated: 2023/11/04 19:22:14 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ MODULE_INFO(intree, "Y");
 static int __init hello_init(void)
 {
 	printk(KERN_INFO "Hello world !\n");
-	return (0);
+	return 0;
 }
 
 static void __exit hello_cleanup(void)
