@@ -6,7 +6,7 @@
 #    By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 12:52:01 by vismaily          #+#    #+#              #
-#    Updated: 2023/10/27 18:25:57 by vismaily         ###   ########.fr        #
+#    Updated: 2023/11/04 19:47:15 by vismaily         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ ccflags-y	= -I$(src)/Includes
 K-VERSION	= $(shell uname -r)
 
 all:
-		mount -t debugfs none /sys/kernel/debug
+#		mount -t debugfs none /sys/kernel/debug
 		make -C /lib/modules/$(K-VERSION)/build M=$(shell pwd) modules
 
 chmod:

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/29 12:43:54 by vismaily          #+#    #+#             */
-/*   Updated: 2023/11/04 19:29:09 by vismaily         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
@@ -26,7 +14,7 @@ static ssize_t	myfd_read(struct file *fp, char __user *user,
 static ssize_t	myfd_write(struct file *fp, const char __user *user,
 				size_t size, loff_t *offs);
 
-static struct file_operations	myfd_fops = {
+static const struct file_operations	myfd_fops = {
 	.owner	= THIS_MODULE,
 	.read	= &myfd_read,
 	.write	= &myfd_write
