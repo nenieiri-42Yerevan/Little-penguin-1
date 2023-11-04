@@ -216,6 +216,7 @@ dmesg | tail -1
   - [Linked lists in the kernel (detailed implementation)](https://kernelnewbies.org/FAQ/LinkedLists)
   - [list_for_each_entry](https://stackoverflow.com/questions/16230524/explain-list-for-each-entry-and-list-for-each-entry-safe)
   - [Mounts](https://www.oreilly.com/library/view/understanding-the-linux/0596002130/ch12s04.html)
+  - [Documentation of seq_file](https://www.kernel.org/doc/html/latest/filesystems/seq_file.html)
 
 ----------
 
