@@ -128,6 +128,10 @@ dmesg | tail -1
 
 **Notes**
   - [Linux coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
+  - For checking coding style use this command:
+    ```sh
+    /usr/src/<kernel>/scripts/checkpatch.pl main.c -no-tree -file --strict
+    ```
 
 ----------
 
@@ -200,6 +204,10 @@ dmesg | tail -1
 
 **Notes**
   - [Linux coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
+  - For checking coding style use this command:
+    ```sh
+    /usr/src/<kernel>/scripts/checkpatch.pl main.c -no-tree -file --strict
+    ```
 
 ----------
 
