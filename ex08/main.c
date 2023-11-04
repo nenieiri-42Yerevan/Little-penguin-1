@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
