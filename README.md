@@ -22,7 +22,7 @@
   - Enable CONFIG_LOCALVERSION_AUTO=y
   
 **Notes**:
-  - In the Linux kernel, ```CONFIG_LOCALVERSION``` and ```CONFIG_LOCALVERSION_AUTO``` in the ```.config``` file and ```EXTRAVERSION``` in the ```Makefile``` are used to specify version information for the kernel.
+  - ```CONFIG_LOCALVERSION``` and ```CONFIG_LOCALVERSION_AUTO``` in the ```.config``` file and ```EXTRAVERSION``` in the ```Makefile``` are used to specify version information for the kernel.
   - With the ```CONFIG_LOCALVERSION``` option, you can set a custom string that will be appended to the kernel version (like the ```EXTRAVERSION``` in the ```Makefile```), allowing you to identify custom builds.
   - For ```CONFIG_LOCALVERSION_AUTO=y``` to work properly the kernel directory must contain the ```.git``` folder.<br>After the build and boot of the kernel with new configs you can see the ```CONFIG_LOCALVERSION_AUTO=y``` result with ```uname -r``` command or in the first lines in ```/var/log/kern.log``` file (which we need to include to our repo as the task requires).
   - You can find the ```CONFIG_LOCALVERSION_AUTO``` option in the menuconfig through this path:
