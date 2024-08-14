@@ -29,7 +29,8 @@
     General setup  --->
       [ ] Automatically append version information to the version string
     ```
-  - For ```CONFIG_LOCALVERSION_AUTO=y``` to work properly the kernel directory must contain the ```.git``` folder.<br>After the build and boot of the kernel with new configs you can see the ```CONFIG_LOCALVERSION_AUTO=y``` result with the ```uname -r``` command or in the first lines in ```/var/log/kern.log``` file (which we need to include to our repo as the task requires).
+  - For ```CONFIG_LOCALVERSION_AUTO=y``` to work properly the kernel directory must contain the ```.git``` folder.
+  - After the build and boot of the kernel with new configs you can see the ```CONFIG_LOCALVERSION_AUTO=y``` result with the ```uname -r``` command or in the first lines in ```/var/log/kern.log``` file (which we need to include to our repo as the task requires).
 
 ----------
 
