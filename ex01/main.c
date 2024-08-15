@@ -6,12 +6,12 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/11/04 19:22:14 by vismaily         ###   ########.fr       */
+/*   Updated: 2024/08/15 11:43:56 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <linux/module.h>
-#include <linux/kernel.h>
+#include <linux/printk.h>
 #include <linux/init.h>
 
 MODULE_AUTHOR("Volodya Ismailyan");
