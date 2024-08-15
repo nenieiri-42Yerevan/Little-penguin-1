@@ -16,7 +16,7 @@
 
 MODULE_AUTHOR("Volodya Ismailyan");
 MODULE_DESCRIPTION("This is a Hello_world module");
-MODULE_VERSION("1.0.0");
+MODULE_VERSION("1:0.0");
 MODULE_LICENSE("GPL");
 MODULE_INFO(intree, "Y");
 
