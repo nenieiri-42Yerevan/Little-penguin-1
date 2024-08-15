@@ -125,6 +125,7 @@ dmesg | tail -1
 
 **Notes**:
   - [Documentation](https://docs.kernel.org/process/submitting-patches.html)
+  - You can check your patches with the patch style checker which is located in ```scripts/checkpatch.pl```.
   - See also ```man patch```
 
 ----------
