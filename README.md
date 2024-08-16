@@ -125,9 +125,10 @@ dmesg | tail -1
 
 **Notes**:
   - [Documentation](https://docs.kernel.org/process/submitting-patches.html)
-  - You can check your patches with the patch style checker which is located in ```scripts/checkpatch.pl```.
-  - See also ```man patch```
+  - You can check your patches with the patch style checker: ```scripts/checkpatch.pl```.
+  - [How to Patch Linux Kernel](https://www.youtube.com/watch?v=okIVM66euT4)
   - [Best Practices to Getting Your Patches Accepted](https://www.youtube.com/watch?v=wjAJ50GqCP4)
+  - See also ```man patch```
 
 ----------
 
