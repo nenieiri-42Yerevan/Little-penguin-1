@@ -124,7 +124,10 @@ dmesg | tail -1
   - Make a patch for the change, it has to be compliant with Linux standards
 
 **Notes**:
-  - [Documentation](https://www.kernel.org/doc/html/v4.17/process/submitting-patches.html)
+  - [Documentation](https://docs.kernel.org/process/submitting-patches.html)
+  - You can check your patches with the patch style checker: ```scripts/checkpatch.pl```.
+  - [How to Patch Linux Kernel](https://www.youtube.com/watch?v=okIVM66euT4)
+  - [Best Practices to Getting Your Patches Accepted](https://www.youtube.com/watch?v=wjAJ50GqCP4)
   - See also ```man patch```
 
 ----------
