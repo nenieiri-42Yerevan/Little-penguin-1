@@ -137,7 +137,7 @@ dmesg | tail -1
   -  Take a given file and modify it to match the Linux coding style.
 
 **Notes**
-  - [Linux coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
+  - [Linux coding style](https://docs.kernel.org/process/coding-style.html)
   - For checking coding style use this command:
     ```sh
     /usr/src/<kernel>/scripts/checkpatch.pl main.c -no-tree -file --strict
