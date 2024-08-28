@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:18:25 by vismaily          #+#    #+#             */
-/*   Updated: 2023/11/04 19:27:46 by vismaily         ###   ########.fr       */
+/*   Updated: 2024/08/28 17:52:41 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ static struct dentry	*db_foo;
 static int __init debugfs_init(void)
 {
 	db_fortytwo = debugfs_create_dir("fortytwo", NULL);
-	if (!db_fortytwo)
-	{
+	if (!db_fortytwo) {
 		pr_err("Failed to create 'fortytwo' directory in debugfs");
 		return -1;
 	}
