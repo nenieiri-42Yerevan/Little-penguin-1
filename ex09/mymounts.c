@@ -6,7 +6,7 @@
 /*   By: vismaily <nenie_iri@mail.ru>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 18:57:03 by vismaily          #+#    #+#             */
-/*   Updated: 2023/11/04 19:30:11 by vismaily         ###   ########.fr       */
+/*   Updated: 2024/09/05 11:59:29 by vismaily         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ static int __init procfs_init(void)
 	mymounts = proc_create("mymounts", 0444, NULL, &proc_fops);
 	if (!mymounts)
 	{
-		pr_info("Errot when creating the proc device.\n");
+		pr_info("Error when creating the proc device.\n");
 		return -ENOMEM;
 	}
 	pr_info("Proc device created.\n");
